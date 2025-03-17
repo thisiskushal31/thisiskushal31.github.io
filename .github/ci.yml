@@ -1,4 +1,4 @@
-name: CI
+name: Build and Deploy
 
 on:
   push:
@@ -29,3 +29,8 @@ jobs:
 
     - name: Build project
       run: npm run build
+
+    - name: Deploy to GitHub Pages
+      run: node scripts/deploy.js
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
