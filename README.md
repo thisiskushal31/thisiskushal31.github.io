@@ -4,12 +4,6 @@ This repository contains the source code for my personal portfolio website, buil
 
 ---
 
-**Live Demo:** [https://thisiskushal31.github.io/](https://thisiskushal31.github.io/)
-
-*Feel free to replace the placeholder above with a screenshot of your live website!*
-
----
-
 ## 🌟 About The Project
 
 This project is a clean, modern, and fully responsive single-page portfolio website. It's designed to provide a comprehensive overview of my work, from my technical skills to the projects I've built. The goal was to create an elegant and professional online presence that is both visually appealing and easy to navigate.
@@ -34,12 +28,37 @@ This project is a clean, modern, and fully responsive single-page portfolio webs
 
 ## 🛠️ Built With
 
-This portfolio was built from scratch using fundamental web technologies.
+This project is built with:
 
-* HTML5
-* CSS3
-* JavaScript
-* [Typed.js](https://github.com/mattboldt/typed.js/) - For the dynamic typing animation.
+* Vite
+* TypeScript
+* React
+* shadcn-ui
+* Tailwind CSS
+
+---
+
+## 🚀 How To Run Locally
+
+If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+
+The only requirement is having Node.js & npm installed. We recommend installing them with [nvm (Node Version Manager)](https://github.com/nvm-sh/nvm) for easier version management.
+
+Follow these steps:
+
+```bash
+# Step 1: Clone the repository using the project's Git URL
+git clone <YOUR_GIT_URL>
+
+# Step 2: Navigate to the project directory.
+cd <YOUR_PROJECT_NAME>
+
+# Step 3: Install the necessary dependencies.
+npm i
+
+# Step 4: Start the development server with auto-reloading and an instant preview.
+npm run dev
+```
 
 ---
 
@@ -50,7 +69,7 @@ You can use this project as a template for your own portfolio. Here’s how:
 1.  **Fork the repository**: Click the 'Fork' button at the top right of this page.
 2.  **Clone your forked repository**:
     ```bash
-    git clone [https://github.com/your-username/thisiskushal31.github.io.git](https://github.com/your-username/thisiskushal31.github.io.git)
+    git clone https://github.com/your-username/your-username.github.io.git
     ```
     *Replace `your-username` with your GitHub username.*
 3.  **Open `index.html` in your browser**: Navigate to the cloned directory and open the `index.html` file to see the website locally.
@@ -65,6 +84,6 @@ You can use this project as a template for your own portfolio. Here’s how:
 
 ## 📧 Contact
 
-Kushal Kumar - [@thisiskushal31](https://github.com/thisiskushal31) - thisiskushal31@gmail.com
+Kushal Gupta - [@thisiskushal31](https://github.com/thisiskushal31)
 
 Project Link: [https://github.com/thisiskushal31/thisiskushal31.github.io](https://github.com/thisiskushal31/thisiskushal31.github.io)
