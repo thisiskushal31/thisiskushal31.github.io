@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { ExternalLink, Github, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -11,8 +12,8 @@ export const Projects = () => {
       image: "photo-1486312338219-ce68d2c6f44d",
       technologies: ["Kubernetes", "Docker", "AWS", "PostgreSQL", "Redis", "Terraform"],
       highlights: ["99.99% Uptime", "10M+ Users", "Auto-scaling"],
-      liveUrl: "#",
-      githubUrl: "#"
+      liveUrl: "https://demo.example.com",
+      githubUrl: "https://github.com/yourprofile/ecommerce-platform"
     },
     {
       title: "DevSecOps Pipeline Automation",
@@ -20,8 +21,8 @@ export const Projects = () => {
       image: "photo-1581091226825-a6a2a5aee158",
       technologies: ["Jenkins", "SonarQube", "Vault", "Ansible", "AWS Security Hub"],
       highlights: ["Zero Vulnerabilities", "Automated Compliance", "50% Faster Deployments"],
-      liveUrl: "#",
-      githubUrl: "#"
+      liveUrl: null, // No live demo available
+      githubUrl: "https://github.com/yourprofile/devsecops-pipeline"
     },
     {
       title: "Multi-Cloud Infrastructure as Code",
@@ -29,8 +30,8 @@ export const Projects = () => {
       image: "photo-1461749280684-dccba630e2f6",
       technologies: ["Terraform", "AWS", "Azure", "GCP", "Python", "GitOps"],
       highlights: ["40% Cost Reduction", "Multi-Cloud", "IaC Best Practices"],
-      liveUrl: "#",
-      githubUrl: "#"
+      liveUrl: "https://infrastructure-demo.example.com",
+      githubUrl: "https://github.com/yourprofile/multi-cloud-iac"
     },
     {
       title: "Real-time Monitoring Dashboard",
@@ -38,8 +39,8 @@ export const Projects = () => {
       image: "photo-1498050108023-c5249f4df085",
       technologies: ["Prometheus", "Grafana", "Go", "TimescaleDB", "Kubernetes"],
       highlights: ["Real-time Alerts", "Custom Metrics", "Automated Response"],
-      liveUrl: "#",
-      githubUrl: "#"
+      liveUrl: null, // No live demo available
+      githubUrl: "https://github.com/yourprofile/monitoring-dashboard"
     },
     {
       title: "Serverless Data Processing Pipeline",
@@ -47,8 +48,8 @@ export const Projects = () => {
       image: "photo-1487058792275-0ad4aaf24ca7",
       technologies: ["AWS Lambda", "Kinesis", "DynamoDB", "S3", "CloudWatch"],
       highlights: ["1TB+ Daily", "99.5% Cost Reduction", "Auto-scaling"],
-      liveUrl: "#",
-      githubUrl: "#"
+      liveUrl: "https://pipeline-demo.example.com",
+      githubUrl: "https://github.com/yourprofile/serverless-pipeline"
     },
     {
       title: "Container Security Platform",
@@ -56,13 +57,13 @@ export const Projects = () => {
       image: "photo-1605810230434-7631ac76ec81",
       technologies: ["Falco", "OPA", "Trivy", "Kubernetes", "Istio"],
       highlights: ["Zero-day Protection", "Compliance Ready", "Runtime Security"],
-      liveUrl: "#",
-      githubUrl: "#"
+      liveUrl: null, // No live demo available
+      githubUrl: "https://github.com/yourprofile/container-security"
     }
   ];
 
   return (
-    <section id="projects" className="py-20 px-4 bg-slate-900/50">
+    <section id="projects" className="py-20 px-4 bg-slate-900/50 dark:bg-slate-900/50">
       <div className="container mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-teal-400 bg-clip-text text-transparent">
@@ -121,21 +122,29 @@ export const Projects = () => {
                 </div>
                 
                 <div className="flex gap-2">
+                  {project.liveUrl && (
+                    <Button
+                      asChild
+                      variant="outline"
+                      size="sm"
+                      className="flex-1 border-slate-600 text-slate-300 hover:bg-slate-700 hover:text-blue-400"
+                    >
+                      <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
+                        <ExternalLink className="mr-2 h-4 w-4" />
+                        Live Demo
+                      </a>
+                    </Button>
+                  )}
                   <Button
+                    asChild
                     variant="outline"
                     size="sm"
-                    className="flex-1 border-slate-600 text-slate-300 hover:bg-slate-700 hover:text-blue-400"
+                    className={`${project.liveUrl ? 'flex-1' : 'w-full'} border-slate-600 text-slate-300 hover:bg-slate-700 hover:text-teal-400`}
                   >
-                    <ExternalLink className="mr-2 h-4 w-4" />
-                    Live Demo
-                  </Button>
-                  <Button
-                    variant="outline"
-                    size="sm"
-                    className="flex-1 border-slate-600 text-slate-300 hover:bg-slate-700 hover:text-teal-400"
-                  >
-                    <Github className="mr-2 h-4 w-4" />
-                    Code
+                    <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
+                      <Github className="mr-2 h-4 w-4" />
+                      View Code
+                    </a>
                   </Button>
                 </div>
               </div>

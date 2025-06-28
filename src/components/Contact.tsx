@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Mail, MessageSquare, Send, MapPin, Phone, Globe, Linkedin, Github, Twitter } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -58,20 +57,20 @@ export const Contact = () => {
       icon: <MapPin className="h-5 w-5" />,
       label: "Location",
       value: "Bangalore, India",
-      href: "#"
+      href: "https://maps.google.com/?q=Bangalore,India"
     },
     {
       icon: <Globe className="h-5 w-5" />,
       label: "Timezone",
       value: "IST (UTC+5:30)",
-      href: "#"
+      href: "https://time.is/IST"
     }
   ];
 
   const socialLinks = [
-    { icon: <Linkedin className="h-5 w-5" />, label: "LinkedIn", href: "#" },
-    { icon: <Github className="h-5 w-5" />, label: "GitHub", href: "#" },
-    { icon: <Twitter className="h-5 w-5" />, label: "Twitter", href: "#" },
+    { icon: <Linkedin className="h-5 w-5" />, label: "LinkedIn", href: "https://linkedin.com/in/yourprofile" },
+    { icon: <Github className="h-5 w-5" />, label: "GitHub", href: "https://github.com/yourprofile" },
+    { icon: <Twitter className="h-5 w-5" />, label: "Twitter", href: "https://twitter.com/yourprofile" },
   ];
 
   return (
@@ -79,7 +78,7 @@ export const Contact = () => {
       <div className="container mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-teal-400 bg-clip-text text-transparent">
-            Start Your Project
+            Hire Me for Freelance
           </h2>
           <p className="text-xl text-slate-400 max-w-2xl mx-auto">
             Ready to transform your ideas into scalable, secure solutions? Let's discuss your project.
@@ -218,7 +217,9 @@ export const Contact = () => {
                   <a
                     key={index}
                     href={info.href}
-                    className="flex items-center p-4 bg-slate-700/30 rounded-lg hover:bg-slate-700/50 transition-colors duration-200 group"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center p-4 bg-slate-700/30 rounded-lg hover:bg-slate-700/50 transition-colors duration-200 group cursor-pointer"
                   >
                     <div className="w-10 h-10 bg-gradient-to-r from-blue-500 to-teal-500 rounded-lg flex items-center justify-center mr-4 text-white">
                       {info.icon}
@@ -275,6 +276,8 @@ export const Contact = () => {
                   <a
                     key={index}
                     href={social.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="w-12 h-12 bg-slate-700/50 rounded-lg flex items-center justify-center text-slate-400 hover:text-white hover:bg-gradient-to-r hover:from-blue-500 hover:to-teal-500 transition-all duration-300"
                   >
                     {social.icon}
