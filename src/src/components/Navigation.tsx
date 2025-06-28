@@ -52,7 +52,7 @@ export const Navigation = () => {
       <div className="container mx-auto px-4 py-4">
         <div className="flex justify-between items-center">
           <Link to="/" className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-teal-400 bg-clip-text text-transparent">
-            DevPortfolio
+            KG
           </Link>
           
           {/* Desktop Menu */}
