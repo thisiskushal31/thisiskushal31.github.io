@@ -1,0 +1,201 @@
+
+import React from 'react';
+import { MapPin, Calendar, Building, Award } from 'lucide-react';
+
+export const Experience = () => {
+  const experiences = [
+    {
+      title: "Senior Platform Engineer",
+      company: "TechCorp Global",
+      location: "Bangalore, India (Remote)",
+      period: "2022 - Present",
+      type: "Full-time",
+      achievements: [
+        "Led cloud migration project reducing infrastructure costs by 40%",
+        "Implemented zero-downtime deployment strategy serving 5M+ users",
+        "Built comprehensive observability platform improving MTTR by 60%",
+        "Mentored team of 8 engineers on DevOps best practices"
+      ],
+      technologies: ["Kubernetes", "AWS", "Terraform", "Python", "Go"]
+    },
+    {
+      title: "DevOps Engineer",
+      company: "StartupTech Solutions",
+      location: "Mumbai, India",
+      period: "2020 - 2022",
+      type: "Full-time",
+      achievements: [
+        "Designed and implemented CI/CD pipelines from scratch",
+        "Reduced deployment time from 4 hours to 15 minutes",
+        "Established security-first development practices",
+        "Achieved SOC2 compliance for the entire platform"
+      ],
+      technologies: ["Jenkins", "Docker", "AWS", "Ansible", "PostgreSQL"]
+    },
+    {
+      title: "Cloud Engineer",
+      company: "Enterprise Solutions Ltd",
+      location: "Delhi, India",
+      period: "2019 - 2020",
+      type: "Full-time",
+      achievements: [
+        "Migrated legacy applications to cloud-native architecture",
+        "Implemented automated backup and disaster recovery solutions",
+        "Optimized cloud spending saving $50K annually",
+        "Established monitoring and alerting infrastructure"
+      ],
+      technologies: ["Azure", "PowerShell", "ARM Templates", "C#"]
+    }
+  ];
+
+  const freelanceProjects = [
+    {
+      title: "E-commerce Platform Modernization",
+      client: "Retail Chain (US)",
+      period: "6 months",
+      scope: "Full infrastructure overhaul and modernization",
+      result: "300% performance improvement, 99.9% uptime achieved"
+    },
+    {
+      title: "Fintech Security Implementation",
+      client: "Financial Startup (Europe)",
+      period: "4 months",
+      scope: "DevSecOps pipeline and compliance framework",
+      result: "PCI DSS compliance achieved, zero security incidents"
+    },
+    {
+      title: "Multi-Cloud Strategy",
+      client: "Healthcare Provider (Australia)",
+      period: "8 months",
+      scope: "Cloud strategy and migration roadmap",
+      result: "45% cost reduction, improved disaster recovery"
+    }
+  ];
+
+  const certifications = [
+    "AWS Solutions Architect Professional",
+    "Certified Kubernetes Administrator (CKA)",
+    "HashiCorp Terraform Associate",
+    "CISSP - Certified Information Systems Security Professional",
+    "Google Cloud Professional DevOps Engineer"
+  ];
+
+  return (
+    <section id="experience" className="py-20 px-4">
+      <div className="container mx-auto">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-teal-400 bg-clip-text text-transparent">
+            Professional Journey
+          </h2>
+          <p className="text-xl text-slate-400 max-w-2xl mx-auto">
+            Delivering excellence across global enterprises and innovative startups
+          </p>
+        </div>
+
+        {/* Full-time Experience */}
+        <div className="mb-16">
+          <h3 className="text-2xl font-semibold text-white mb-8 flex items-center">
+            <Building className="mr-3 h-6 w-6 text-blue-400" />
+            Professional Experience
+          </h3>
+          <div className="space-y-8">
+            {experiences.map((exp, index) => (
+              <div
+                key={index}
+                className="bg-slate-800/50 backdrop-blur-sm rounded-xl p-6 border border-slate-700 hover:bg-slate-800/70 transition-all duration-300"
+              >
+                <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
+                  <div>
+                    <h4 className="text-xl font-semibold text-white mb-2">{exp.title}</h4>
+                    <p className="text-blue-400 font-medium mb-2">{exp.company}</p>
+                    <div className="flex flex-wrap gap-4 text-slate-400 text-sm mb-4">
+                      <span className="flex items-center">
+                        <MapPin className="mr-1 h-4 w-4" />
+                        {exp.location}
+                      </span>
+                      <span className="flex items-center">
+                        <Calendar className="mr-1 h-4 w-4" />
+                        {exp.period}
+                      </span>
+                      <span className="px-2 py-1 bg-slate-700/50 rounded text-xs">
+                        {exp.type}
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                
+                <div className="mb-4">
+                  <h5 className="text-teal-400 font-medium mb-2">Key Achievements:</h5>
+                  <ul className="space-y-1">
+                    {exp.achievements.map((achievement, achIndex) => (
+                      <li key={achIndex} className="text-slate-300 flex items-start">
+                        <div className="w-2 h-2 bg-teal-400 rounded-full mr-3 mt-2 flex-shrink-0"></div>
+                        {achievement}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                
+                <div>
+                  <h5 className="text-purple-400 font-medium mb-2">Technologies:</h5>
+                  <div className="flex flex-wrap gap-2">
+                    {exp.technologies.map((tech, techIndex) => (
+                      <span
+                        key={techIndex}
+                        className="px-3 py-1 bg-slate-700/50 text-slate-300 rounded-full text-sm border border-slate-600"
+                      >
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Freelance Projects */}
+        <div className="mb-16">
+          <h3 className="text-2xl font-semibold text-white mb-8 flex items-center">
+            <Award className="mr-3 h-6 w-6 text-teal-400" />
+            Freelance Success Stories
+          </h3>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {freelanceProjects.map((project, index) => (
+              <div
+                key={index}
+                className="bg-gradient-to-br from-slate-800/50 to-slate-700/30 backdrop-blur-sm rounded-xl p-6 border border-slate-600 hover:border-teal-400/50 transition-all duration-300"
+              >
+                <h4 className="text-lg font-semibold text-white mb-2">{project.title}</h4>
+                <p className="text-teal-400 text-sm mb-2">{project.client}</p>
+                <p className="text-slate-400 text-sm mb-3">Duration: {project.period}</p>
+                <p className="text-slate-300 text-sm mb-3">{project.scope}</p>
+                <div className="p-3 bg-slate-900/50 rounded-lg border-l-4 border-green-400">
+                  <p className="text-green-400 text-sm font-medium">Result: {project.result}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Certifications */}
+        <div className="bg-slate-800/30 rounded-2xl p-8 backdrop-blur-sm border border-slate-700">
+          <h3 className="text-2xl font-semibold text-white mb-6 text-center">
+            Professional Certifications
+          </h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            {certifications.map((cert, index) => (
+              <div
+                key={index}
+                className="flex items-center p-3 bg-slate-700/30 rounded-lg border border-slate-600 hover:border-blue-400/50 transition-colors duration-200"
+              >
+                <Award className="h-5 w-5 text-yellow-400 mr-3 flex-shrink-0" />
+                <span className="text-slate-300 text-sm">{cert}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
