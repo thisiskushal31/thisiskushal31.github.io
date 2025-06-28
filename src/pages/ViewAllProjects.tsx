@@ -1,8 +1,8 @@
-
 import React from 'react';
 import { ExternalLink, Github, ArrowLeft, Calendar, Users, Award } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
+import { ScrollToTop } from '@/components/ScrollToTop';
 
 const ViewAllProjects = () => {
   const allProjects = [
@@ -254,6 +254,8 @@ const ViewAllProjects = () => {
           </div>
         )}
       </div>
+      
+      <ScrollToTop />
     </div>
   );
 };
