@@ -4,80 +4,70 @@ import { MapPin, Calendar, Building, Award } from 'lucide-react';
 
 export const Experience = () => {
   const experiences = [
-    {
-      title: "Senior Platform Engineer",
-      company: "TechCorp Global",
-      location: "Bangalore, India (Remote)",
-      period: "2022 - Present",
-      type: "Full-time",
-      achievements: [
-        "Led cloud migration project reducing infrastructure costs by 40%",
-        "Implemented zero-downtime deployment strategy serving 5M+ users",
-        "Built comprehensive observability platform improving MTTR by 60%",
-        "Mentored team of 8 engineers on DevOps best practices"
-      ],
-      technologies: ["Kubernetes", "AWS", "Terraform", "Python", "Go"]
-    },
+    // {
+    //   title: "Senior DevOps Engineer",
+    //   company: "Purplle.com",
+    //   location: "Mumbai, India",
+    //   period: "January 2023 - Present",
+    //   type: "Full-time",
+    //   achievements: [
+    //     "Led cloud migration project reducing infrastructure costs by 40%",
+    //     "Implemented zero-downtime deployment strategy serving 5M+ users",
+    //     "Built comprehensive observability platform improving MTTR by 60%",
+    //     "Mentored team of 8 engineers on DevOps best practices"
+    //   ],
+    //   technologies: ["Kubernetes", "AWS", "Terraform", "Python", "Go"]
+    // },
     {
       title: "DevOps Engineer",
-      company: "StartupTech Solutions",
-      location: "Mumbai, India",
-      period: "2020 - 2022",
+      company: "Purplle.com",
+      location: "Mumbai, India (Hybrid)",
+      period: "January 2023 - Present",
       type: "Full-time",
       achievements: [
-        "Designed and implemented CI/CD pipelines from scratch",
-        "Reduced deployment time from 4 hours to 15 minutes",
-        "Established security-first development practices",
-        "Achieved SOC2 compliance for the entire platform"
+        "Automated 40%+ of infrastructure provisioning using CI/CD, Terraform, Jenkins, and GitOps, significantly boosting delivery speed.",
+        "Achieved and maintained 99%+ service uptime through critical production infrastructure management and robust Prometheus/Grafana monitoring and alerting systems.",
+        "Optimized cloud spend by 40-50% on GCP/AWS via continuous rightsizing, autoscaling, and resource cleanup.",
+        "Enhanced system resilience and security by implementing backup/disaster recovery solutions, deploying an on-call alerting system (reducing MTTR from 30 to 7 minutes), and leading IAM role minimization.",
+        "Enabled critical business operations by independently deploying infrastructure for the Purplle.com POS application and a third-party testing tool."
       ],
-      technologies: ["Jenkins", "Docker", "AWS", "Ansible", "PostgreSQL"]
-    },
-    {
-      title: "Cloud Engineer",
-      company: "Enterprise Solutions Ltd",
-      location: "Delhi, India",
-      period: "2019 - 2020",
-      type: "Full-time",
-      achievements: [
-        "Migrated legacy applications to cloud-native architecture",
-        "Implemented automated backup and disaster recovery solutions",
-        "Optimized cloud spending saving $50K annually",
-        "Established monitoring and alerting infrastructure"
-      ],
-      technologies: ["Azure", "PowerShell", "ARM Templates", "C#"]
+      technologies: ["GCP", "AWS", "Terraform", "Python", "CI/CD", "Kubernetes", "Docker", "Prometheus", "Grafana"]
     }
   ];
 
   const freelanceProjects = [
-    {
-      title: "E-commerce Platform Modernization",
-      client: "Retail Chain (US)",
-      period: "6 months",
-      scope: "Full infrastructure overhaul and modernization",
-      result: "300% performance improvement, 99.9% uptime achieved"
-    },
-    {
-      title: "Fintech Security Implementation",
-      client: "Financial Startup (Europe)",
-      period: "4 months",
-      scope: "DevSecOps pipeline and compliance framework",
-      result: "PCI DSS compliance achieved, zero security incidents"
-    },
-    {
-      title: "Multi-Cloud Strategy",
-      client: "Healthcare Provider (Australia)",
-      period: "8 months",
-      scope: "Cloud strategy and migration roadmap",
-      result: "45% cost reduction, improved disaster recovery"
-    }
+    // {
+    //   title: "E-commerce Platform Modernization",
+    //   client: "Retail Chain (US)",
+    //   period: "6 months",
+    //   scope: "Full infrastructure overhaul and modernization",
+    //   result: "300% performance improvement, 99.9% uptime achieved"
+    // },
+    // {
+    //   title: "Fintech Security Implementation",
+    //   client: "Financial Startup (Europe)",
+    //   period: "4 months",
+    //   scope: "DevSecOps pipeline and compliance framework",
+    //   result: "PCI DSS compliance achieved, zero security incidents"
+    // },
+    // {
+    //   title: "Multi-Cloud Strategy",
+    //   client: "Healthcare Provider (Australia)",
+    //   period: "8 months",
+    //   scope: "Cloud strategy and migration roadmap",
+    //   result: "45% cost reduction, improved disaster recovery"
+    // }
   ];
 
   const certifications = [
-    "AWS Solutions Architect Professional",
-    "Certified Kubernetes Administrator (CKA)",
-    "HashiCorp Terraform Associate",
-    "CISSP - Certified Information Systems Security Professional",
-    "Google Cloud Professional DevOps Engineer"
+    "Associate Cloud Engineer Certification",
+    "Architecting with Google Compute Engine",
+    "Essential Google Cloud Infrastructure: Foundation",
+    "Elastic Google Cloud Infrastructure: Scaling and Automation"
+    // "Certified Kubernetes Administrator (CKA)",
+    // "HashiCorp Terraform Associate",
+    // "CISSP - Certified Information Systems Security Professional",
+    // "Google Cloud Professional DevOps Engineer"
   ];
 
   return (
