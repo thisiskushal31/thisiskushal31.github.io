@@ -218,7 +218,7 @@ function example() {
               <CardTitle className="text-white flex items-center gap-2">
                 <Upload className="h-5 w-5" />
                 Upload Files for Preview
-              </CardTitle
+              </CardTitle>
             </CardHeader>
             <CardContent>
               <FileUploader onFileProcessed={handleFileProcessed} />
