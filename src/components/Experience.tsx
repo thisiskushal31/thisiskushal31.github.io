@@ -22,7 +22,7 @@ export const Experience = () => {
       title: "DevOps Engineer (Associate, SDE-1)",
       company: "Purplle.com",
       location: "Mumbai, Maharashtra, India (Hybrid)",
-      period: "January 2023 - Present",
+      period: "June 2023 - Present",
       type: "Full-time",
       achievements: [
         "Automated 40%+ of infrastructure provisioning using CI/CD, Terraform, Jenkins, and GitOps, significantly boosting delivery speed.",
@@ -38,7 +38,7 @@ export const Experience = () => {
       title: "DevOps Engineer - Intern",
       company: "Purplle.com",
       location: "Mumbai, Maharashtra, India (Remote)",
-      period: "January 2023 - Present",
+      period: "January 2023 - June 2023",
       type: "Internship",
       achievements: [
         "Achieved >98% uptime by deploying a robust Prometheus and Grafana monitoring and alerting system, leading to faster issue detection and resolution.",
