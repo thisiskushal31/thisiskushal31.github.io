@@ -4,20 +4,6 @@ import { MapPin, Calendar, Building, Award } from 'lucide-react';
 
 export const Experience = () => {
   const experiences = [
-    // {
-    //   title: "Senior DevOps Engineer",
-    //   company: "Purplle.com",
-    //   location: "Mumbai, India",
-    //   period: "January 2023 - Present",
-    //   type: "Full-time",
-    //   achievements: [
-    //     "Led cloud migration project reducing infrastructure costs by 40%",
-    //     "Implemented zero-downtime deployment strategy serving 5M+ users",
-    //     "Built comprehensive observability platform improving MTTR by 60%",
-    //     "Mentored team of 8 engineers on DevOps best practices"
-    //   ],
-    //   technologies: ["Kubernetes", "AWS", "Terraform", "Python", "Go"]
-    // },
     {
       title: "DevOps Engineer (Associate, SDE-1)",
       company: "Purplle.com",
