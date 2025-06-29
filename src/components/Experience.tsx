@@ -19,19 +19,32 @@ export const Experience = () => {
     //   technologies: ["Kubernetes", "AWS", "Terraform", "Python", "Go"]
     // },
     {
-      title: "DevOps Engineer",
+      title: "DevOps Engineer (Associate, SDE-1)",
       company: "Purplle.com",
-      location: "Mumbai, India (Hybrid)",
+      location: "Mumbai, Maharashtra, India (Hybrid)",
       period: "January 2023 - Present",
       type: "Full-time",
       achievements: [
         "Automated 40%+ of infrastructure provisioning using CI/CD, Terraform, Jenkins, and GitOps, significantly boosting delivery speed.",
-        "Achieved and maintained 99%+ service uptime through critical production infrastructure management and robust Prometheus/Grafana monitoring and alerting systems.",
-        "Optimized cloud spend by 40-50% on GCP/AWS via continuous rightsizing, autoscaling, and resource cleanup.",
-        "Enhanced system resilience and security by implementing backup/disaster recovery solutions, deploying an on-call alerting system (reducing MTTR from 30 to 7 minutes), and leading IAM role minimization.",
-        "Enabled critical business operations by independently deploying infrastructure for the Purplle.com POS application and a third-party testing tool."
+        "Achieved and maintained 99%+ service uptime by managing critical production infrastructure and ensuring consistent availability during peak loads.",
+        "Optimized cloud spend by 40-50% on GCP/AWS via continuous rightsizing, autoscaling, usage audits, and resource cleanup.",
+        "Enhanced system resilience and security by designing and implementing backup/disaster recovery solutions, deploying an on-call alerting system (reducing MTTR from 30 to 7 minutes), and leading IAM role minimization.",
+        "Enabled critical business operations by independently deploying infrastructure for the Purplle.com POS application and Hypertest (third-party testing tool), ensuring smooth handovers to dev teams.",
+        "Collaborated with platform teams to troubleshoot and resolve high-impact infrastructure issues across services, strengthening system reliability."
       ],
-      technologies: ["GCP", "AWS", "Terraform", "Python", "CI/CD", "Kubernetes", "Docker", "Prometheus", "Grafana"]
+      technologies: ["GCP", "AWS", "Terraform", "Jenkins", "GitOps", "Python", "CI/CD", "Container Orchestration", "Kubernetes",  "Prometheus", "Grafana"]
+    },
+    {
+      title: "DevOps Engineer - Intern",
+      company: "Purplle.com",
+      location: "Mumbai, Maharashtra, India (Remote)",
+      period: "January 2023 - Present",
+      type: "Internship",
+      achievements: [
+        "Achieved >98% uptime by deploying a robust Prometheus and Grafana monitoring and alerting system, leading to faster issue detection and resolution.",
+        "Improved platform reliability by collaborating across teams to resolve high-impact issues in production infrastructure."
+      ],
+      technologies: ["Prometheus", "Grafana", "GCE"]
     }
   ];
 
