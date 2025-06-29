@@ -32,7 +32,7 @@ export const Experience = () => {
         "Enabled critical business operations by independently deploying infrastructure for the Purplle.com POS application and Hypertest (third-party testing tool), ensuring smooth handovers to dev teams.",
         "Collaborated with platform teams to troubleshoot and resolve high-impact infrastructure issues across services, strengthening system reliability."
       ],
-      technologies: ["GCP", "AWS", "Terraform", "Jenkins", "GitOps", "Python", "CI/CD", "Container Orchestration", "Kubernetes",  "Prometheus", "Grafana"]
+      technologies: ["GCP", "AWS", "Terraform", "Jenkins", "GitOps", "Python", "CI/CD", "Container Orchestration",  "Prometheus", "Grafana"]
     },
     {
       title: "DevOps Engineer - Intern",
