@@ -1,6 +1,5 @@
-
-import React from 'react';
-import { MapPin, Calendar, Building, Award } from 'lucide-react';
+import React from "react";
+import { MapPin, Calendar, Building, Award } from "lucide-react";
 
 export const Experience = () => {
   const experiences = [
@@ -16,9 +15,20 @@ export const Experience = () => {
         "Optimized cloud spend by 40-50% on GCP/AWS via continuous rightsizing, autoscaling, usage audits, and resource cleanup.",
         "Enhanced system resilience and security by designing and implementing backup/disaster recovery solutions, deploying an on-call alerting system (reducing MTTR from 30 to 7 minutes), and leading IAM role minimization.",
         "Enabled critical business operations by independently deploying infrastructure for the Purplle.com POS application and Hypertest (third-party testing tool), ensuring smooth handovers to dev teams.",
-        "Collaborated with platform teams to troubleshoot and resolve high-impact infrastructure issues across services, strengthening system reliability."
+        "Collaborated with platform teams to troubleshoot and resolve high-impact infrastructure issues across services, strengthening system reliability.",
       ],
-      technologies: ["GCP", "AWS", "Terraform", "Jenkins", "GitOps", "Python", "CI/CD", "Container Orchestration",  "Prometheus", "Grafana"]
+      technologies: [
+        "GCP",
+        "AWS",
+        "Terraform",
+        "Jenkins",
+        "GitOps",
+        "Python",
+        "CI/CD",
+        "Container Orchestration",
+        "Prometheus",
+        "Grafana",
+      ],
     },
     {
       title: "DevOps Engineer - Intern",
@@ -28,10 +38,10 @@ export const Experience = () => {
       type: "Internship",
       achievements: [
         "Achieved >98% uptime by deploying a robust Prometheus and Grafana monitoring and alerting system, leading to faster issue detection and resolution.",
-        "Improved platform reliability by collaborating across teams to resolve high-impact issues in production infrastructure."
+        "Improved platform reliability by collaborating across teams to resolve high-impact issues in production infrastructure.",
       ],
-      technologies: ["Prometheus", "Grafana", "GCE"]
-    }
+      technologies: ["Prometheus", "Grafana", "GCE"],
+    },
   ];
 
   const freelanceProjects = [
@@ -62,7 +72,7 @@ export const Experience = () => {
     "Associate Cloud Engineer Certification",
     "Architecting with Google Compute Engine",
     "Essential Google Cloud Infrastructure: Foundation",
-    "Elastic Google Cloud Infrastructure: Scaling and Automation"
+    "Elastic Google Cloud Infrastructure: Scaling and Automation",
     // "Certified Kubernetes Administrator (CKA)",
     // "HashiCorp Terraform Associate",
     // "CISSP - Certified Information Systems Security Professional",
@@ -77,7 +87,8 @@ export const Experience = () => {
             Professional Journey
           </h2>
           <p className="text-xl text-slate-400 max-w-2xl mx-auto">
-            Delivering excellence across global enterprises and innovative startups
+            Delivering excellence across global enterprises and innovative
+            startups
           </p>
         </div>
 
@@ -95,8 +106,12 @@ export const Experience = () => {
               >
                 <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
                   <div>
-                    <h4 className="text-xl font-semibold text-white mb-2">{exp.title}</h4>
-                    <p className="text-blue-400 font-medium mb-2">{exp.company}</p>
+                    <h4 className="text-xl font-semibold text-white mb-2">
+                      {exp.title}
+                    </h4>
+                    <p className="text-blue-400 font-medium mb-2">
+                      {exp.company}
+                    </p>
                     <div className="flex flex-wrap gap-4 text-slate-400 text-sm mb-4">
                       <span className="flex items-center">
                         <MapPin className="mr-1 h-4 w-4" />
@@ -112,21 +127,28 @@ export const Experience = () => {
                     </div>
                   </div>
                 </div>
-                
+
                 <div className="mb-4">
-                  <h5 className="text-teal-400 font-medium mb-2">Key Achievements:</h5>
+                  <h5 className="text-teal-400 font-medium mb-2">
+                    Key Achievements:
+                  </h5>
                   <ul className="space-y-1">
                     {exp.achievements.map((achievement, achIndex) => (
-                      <li key={achIndex} className="text-slate-300 flex items-start">
+                      <li
+                        key={achIndex}
+                        className="text-slate-300 flex items-start"
+                      >
                         <div className="w-2 h-2 bg-teal-400 rounded-full mr-3 mt-2 flex-shrink-0"></div>
                         {achievement}
                       </li>
                     ))}
                   </ul>
                 </div>
-                
+
                 <div>
-                  <h5 className="text-purple-400 font-medium mb-2">Technologies:</h5>
+                  <h5 className="text-purple-400 font-medium mb-2">
+                    Technologies:
+                  </h5>
                   <div className="flex flex-wrap gap-2">
                     {exp.technologies.map((tech, techIndex) => (
                       <span
