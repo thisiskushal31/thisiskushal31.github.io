@@ -1,13 +1,13 @@
 
 export const portfolioConfig = {
   personal: {
-    name: "DevOps Portfolio",
-    initials: "DP",
+    name: "Kushal Gupta",
+    initials: "KG",
     title: "DevOps Engineer",
     subtitle: "Transitioning to DevSecOps & Platform Engineering",
     description: "Passionate about building secure, scalable infrastructure and streamlining development workflows. Currently expanding into security-first practices and platform engineering.",
-    location: "San Francisco, CA",
-    timezone: "PST (UTC-8)",
+    location: "Mumbai, India",
+    timezone: "IST (UTC+5:30)",
     email: "hello@devopsportfolio.com"
   },
   
