@@ -163,7 +163,7 @@ const Index = () => {
           </p>
           <Button asChild size="lg" variant="outline">
             <a 
-              href="https://thisiskushal31.github.io/blogs" 
+              href="https://thisiskushal31.github.io/blog" 
               target="_blank" 
               rel="noopener noreferrer"
               className="inline-flex items-center"
