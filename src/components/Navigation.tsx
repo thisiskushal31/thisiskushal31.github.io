@@ -1,8 +1,8 @@
-import { useState } from 'react';
-import { Link, useLocation } from 'react-router-dom';
-import { Button } from '@/components/ui/button';
-import { Sun, Moon, Menu, X } from 'lucide-react';
-import { useTheme } from '@/hooks/useTheme';
+import { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
+import { Button } from "@/components/ui/button";
+import { Sun, Moon, Menu, X } from "lucide-react";
+import { useTheme } from "@/hooks/useTheme";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,11 +10,11 @@ const Navigation = () => {
   const location = useLocation();
 
   const navItems = [
-    { name: 'Home', path: '/' },
-    { name: 'Skills', path: '/skills' },
-    { name: 'Experience', path: '/experience' },
-    { name: 'Projects', path: '/projects' },
-    { name: 'Contact', path: '/contact' },
+    { name: "Home", path: "/" },
+    { name: "Skills", path: "/skills" },
+    { name: "Experience", path: "/experience" },
+    { name: "Projects", path: "/projects" },
+    { name: "Contact", path: "/contact" },
   ];
 
   const isActive = (path: string) => {
@@ -28,9 +28,9 @@ const Navigation = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
             <div className="w-8 h-8 bg-gradient-to-br from-blue-600 to-purple-600 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold font-mono">D</span>
+              <span className="text-white font-bold font-mono">KG</span>
             </div>
-            <span className="text-xl font-bold">DevOps Portfolio</span>
+            <span className="text-xl font-bold">Know Kushal</span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -41,21 +41,21 @@ const Navigation = () => {
                 to={item.path}
                 className={`text-sm font-medium transition-colors hover:text-primary ${
                   isActive(item.path)
-                    ? 'text-primary border-b-2 border-primary pb-1'
-                    : 'text-muted-foreground'
+                    ? "text-primary border-b-2 border-primary pb-1"
+                    : "text-muted-foreground"
                 }`}
               >
                 {item.name}
               </Link>
             ))}
-            
+
             <Button
               variant="ghost"
               size="sm"
               onClick={toggleTheme}
               className="w-9 h-9 p-0"
             >
-              {theme === 'dark' ? (
+              {theme === "dark" ? (
                 <Sun className="h-4 w-4" />
               ) : (
                 <Moon className="h-4 w-4" />
@@ -71,20 +71,24 @@ const Navigation = () => {
               onClick={toggleTheme}
               className="w-9 h-9 p-0"
             >
-              {theme === 'dark' ? (
+              {theme === "dark" ? (
                 <Sun className="h-4 w-4" />
               ) : (
                 <Moon className="h-4 w-4" />
               )}
             </Button>
-            
+
             <Button
               variant="ghost"
               size="sm"
               onClick={() => setIsOpen(!isOpen)}
               className="w-9 h-9 p-0"
             >
-              {isOpen ? <X className="h-4 w-4" /> : <Menu className="h-4 w-4" />}
+              {isOpen ? (
+                <X className="h-4 w-4" />
+              ) : (
+                <Menu className="h-4 w-4" />
+              )}
             </Button>
           </div>
         </div>
@@ -100,8 +104,8 @@ const Navigation = () => {
                   onClick={() => setIsOpen(false)}
                   className={`block px-3 py-2 rounded-md text-base font-medium transition-colors ${
                     isActive(item.path)
-                      ? 'text-primary bg-primary/10'
-                      : 'text-muted-foreground hover:text-foreground hover:bg-muted'
+                      ? "text-primary bg-primary/10"
+                      : "text-muted-foreground hover:text-foreground hover:bg-muted"
                   }`}
                 >
                   {item.name}
