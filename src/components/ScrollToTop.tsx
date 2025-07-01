@@ -1,9 +1,9 @@
 
-import React, { useState, useEffect } from 'react';
-import { ArrowUp } from 'lucide-react';
+import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
+import { ChevronUp } from 'lucide-react';
 
-export const ScrollToTop = () => {
+const ScrollToTop = () => {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -26,17 +26,19 @@ export const ScrollToTop = () => {
     });
   };
 
-  if (!isVisible) {
-    return null;
-  }
-
   return (
-    <Button
-      onClick={scrollToTop}
-      className="fixed bottom-8 right-8 z-50 bg-gradient-to-r from-blue-500 to-teal-500 hover:from-blue-600 hover:to-teal-600 text-white p-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 animate-fade-in"
-      size="icon"
-    >
-      <ArrowUp className="h-5 w-5" />
-    </Button>
+    <>
+      {isVisible && (
+        <Button
+          onClick={scrollToTop}
+          className="fixed bottom-8 right-8 z-50 w-12 h-12 rounded-full shadow-lg"
+          size="sm"
+        >
+          <ChevronUp className="h-4 w-4" />
+        </Button>
+      )}
+    </>
   );
 };
+
+export default ScrollToTop;

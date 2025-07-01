@@ -1,122 +1,118 @@
-import React, { useState, useEffect } from 'react';
-import { Menu, X } from 'lucide-react';
+import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import { Button } from '@/components/ui/button';
+import { Sun, Moon, Menu, X } from 'lucide-react';
+import { useTheme } from '@/hooks/useTheme';
 
-export const Navigation = () => {
-  const [isScrolled, setIsScrolled] = useState(false);
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+const Navigation = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const { theme, toggleTheme } = useTheme();
   const location = useLocation();
 
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
-    };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
   const navItems = [
-    { href: '#home', label: 'Home', isSection: true },
-    { href: '#skills', label: 'Skills', isSection: true },
-    { href: '#projects', label: 'Projects', isSection: true },
-    { href: '#experience', label: 'Experience', isSection: true },
-    { href: '#contact', label: 'Contact', isSection: true },
-    { href: '/blog', label: 'Blog', isSection: false },
-    { href: '/links', label: 'Links', isSection: false },
+    { name: 'Home', path: '/' },
+    { name: 'Skills', path: '/skills' },
+    { name: 'Experience', path: '/experience' },
+    { name: 'Projects', path: '/projects' },
+    { name: 'Contact', path: '/contact' },
   ];
 
-  const scrollToSection = (href: string) => {
-    const element = document.querySelector(href);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-    setIsMobileMenuOpen(false);
-  };
-
-  const handleNavClick = (item: typeof navItems[0]) => {
-    if (item.isSection) {
-      // If we're not on the home page, navigate to home first
-      if (location.pathname !== '/') {
-        window.location.href = '/' + item.href;
-      } else {
-        scrollToSection(item.href);
-      }
-    }
-    setIsMobileMenuOpen(false);
+  const isActive = (path: string) => {
+    return location.pathname === path;
   };
 
   return (
-    <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-      isScrolled ? 'bg-slate-900/95 backdrop-blur-sm shadow-lg' : 'bg-transparent'
-    }`}>
-      <div className="container mx-auto px-4 py-4">
-        <div className="flex justify-between items-center">
-          <Link to="/" className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-teal-400 bg-clip-text text-transparent">
-            KG
+    <nav className="sticky top-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
+      <div className="container mx-auto px-4">
+        <div className="flex items-center justify-between h-16">
+          {/* Logo */}
+          <Link to="/" className="flex items-center space-x-2">
+            <div className="w-8 h-8 bg-gradient-to-br from-blue-600 to-purple-600 rounded-lg flex items-center justify-center">
+              <span className="text-white font-bold font-mono">D</span>
+            </div>
+            <span className="text-xl font-bold">DevOps Portfolio</span>
           </Link>
-          
-          {/* Desktop Menu */}
-          <div className="hidden md:flex space-x-8 items-center">
+
+          {/* Desktop Navigation */}
+          <div className="hidden md:flex items-center space-x-8">
             {navItems.map((item) => (
-              item.isSection ? (
-                <button
-                  key={item.href}
-                  onClick={() => handleNavClick(item)}
-                  className="text-slate-300 hover:text-blue-400 transition-colors duration-200 relative group"
-                >
-                  {item.label}
-                  <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-400 transition-all duration-200 group-hover:w-full"></span>
-                </button>
-              ) : (
-                <Link
-                  key={item.href}
-                  to={item.href}
-                  className="text-slate-300 hover:text-blue-400 transition-colors duration-200 relative group"
-                >
-                  {item.label}
-                  <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-400 transition-all duration-200 group-hover:w-full"></span>
-                </Link>
-              )
+              <Link
+                key={item.name}
+                to={item.path}
+                className={`text-sm font-medium transition-colors hover:text-primary ${
+                  isActive(item.path)
+                    ? 'text-primary border-b-2 border-primary pb-1'
+                    : 'text-muted-foreground'
+                }`}
+              >
+                {item.name}
+              </Link>
             ))}
+            
+            <Button
+              variant="ghost"
+              size="sm"
+              onClick={toggleTheme}
+              className="w-9 h-9 p-0"
+            >
+              {theme === 'dark' ? (
+                <Sun className="h-4 w-4" />
+              ) : (
+                <Moon className="h-4 w-4" />
+              )}
+            </Button>
           </div>
 
-          {/* Mobile Menu Button */}
-          <div className="md:hidden">
-            <button
-              className="text-slate-300 hover:text-blue-400"
-              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+          {/* Mobile menu button */}
+          <div className="md:hidden flex items-center space-x-2">
+            <Button
+              variant="ghost"
+              size="sm"
+              onClick={toggleTheme}
+              className="w-9 h-9 p-0"
             >
-              {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
-            </button>
+              {theme === 'dark' ? (
+                <Sun className="h-4 w-4" />
+              ) : (
+                <Moon className="h-4 w-4" />
+              )}
+            </Button>
+            
+            <Button
+              variant="ghost"
+              size="sm"
+              onClick={() => setIsOpen(!isOpen)}
+              className="w-9 h-9 p-0"
+            >
+              {isOpen ? <X className="h-4 w-4" /> : <Menu className="h-4 w-4" />}
+            </Button>
           </div>
         </div>
 
-        {/* Mobile Menu */}
-        {isMobileMenuOpen && (
-          <div className="md:hidden mt-4 py-4 bg-slate-800/95 rounded-lg backdrop-blur-sm">
-            {navItems.map((item) => (
-              item.isSection ? (
-                <button
-                  key={item.href}
-                  onClick={() => handleNavClick(item)}
-                  className="block w-full text-left px-4 py-2 text-slate-300 hover:text-blue-400 hover:bg-slate-700/50 transition-colors duration-200"
-                >
-                  {item.label}
-                </button>
-              ) : (
+        {/* Mobile Navigation */}
+        {isOpen && (
+          <div className="md:hidden">
+            <div className="px-2 pt-2 pb-3 space-y-1 bg-background border-t border-border">
+              {navItems.map((item) => (
                 <Link
-                  key={item.href}
-                  to={item.href}
-                  onClick={() => setIsMobileMenuOpen(false)}
-                  className="block w-full text-left px-4 py-2 text-slate-300 hover:text-blue-400 hover:bg-slate-700/50 transition-colors duration-200"
+                  key={item.name}
+                  to={item.path}
+                  onClick={() => setIsOpen(false)}
+                  className={`block px-3 py-2 rounded-md text-base font-medium transition-colors ${
+                    isActive(item.path)
+                      ? 'text-primary bg-primary/10'
+                      : 'text-muted-foreground hover:text-foreground hover:bg-muted'
+                  }`}
                 >
-                  {item.label}
+                  {item.name}
                 </Link>
-              )
-            ))}
+              ))}
+            </div>
           </div>
         )}
       </div>
     </nav>
   );
 };
+
+export default Navigation;
