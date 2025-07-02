@@ -1,85 +1,67 @@
-
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Badge } from '@/components/ui/badge';
-import { Button } from '@/components/ui/button';
-import { ExternalLink, MapPin, Calendar } from 'lucide-react';
-import LinkableHeading from '@/components/LinkableHeading';
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import { ExternalLink, MapPin, Calendar } from "lucide-react";
+import LinkableHeading from "@/components/LinkableHeading";
 
 const Experience = () => {
   const experiences = [
     {
-      title: 'Senior DevOps Engineer',
-      company: 'TechCorp Solutions',
-      location: 'San Francisco, CA',
-      period: '2022 - Present',
-      type: 'Full-time',
-      description: 'Leading infrastructure automation and cloud migration initiatives for enterprise clients.',
+      title: "DevOps Engineer (Associate, SDE-1)",
+      company: "Purplle.com",
+      location: "Mumbai, Maharashtra, India",
+      period: "June 2023 - Present",
+      type: "Hybrid",
+      description:
+        "Automated infra, cut cloud costs 40%+, achieved 99% uptime, led CI/CD and security compliance, and enabled resilient, scalable deployments at Purplle.com.",
       achievements: [
-        'Reduced deployment time by 75% through CI/CD pipeline optimization',
-        'Migrated 50+ applications to Kubernetes, improving scalability',
-        'Implemented Infrastructure as Code reducing manual errors by 90%',
-        'Led security compliance initiatives achieving SOC 2 certification'
+        "Automated 40%+ of infrastructure provisioning using CI/CD, Terraform, Jenkins, and GitOps, significantly boosting delivery speed.",
+        "Achieved and maintained 99%+ service uptime by managing critical production infrastructure and ensuring consistent availability during peak loads.",
+        "Optimized cloud spend by 40-50% on GCP/AWS via continuous rightsizing, autoscaling, usage audits, and resource cleanup.",
+        "Enhanced system resilience and security by designing and implementing backup/disaster recovery solutions, deploying an on-call alerting system (reducing MTTR from 30 to 7 minutes), and leading IAM role minimization.",
+        "Enabled critical business operations by independently deploying infrastructure for the Purplle.com POS application and Hypertest (third-party testing tool), ensuring smooth handovers to dev teams.",
+        "Collaborated with platform teams to troubleshoot and resolve high-impact infrastructure issues across services, strengthening system reliability.",
       ],
-      technologies: ['AWS', 'Kubernetes', 'Terraform', 'Jenkins', 'Docker', 'Python', 'Prometheus'],
-      links: []
+      technologies: [
+        "GCP",
+        "AWS",
+        "Terraform",
+        "Jenkins",
+        "GitOps",
+        "Python",
+        "CI/CD",
+        "Container Orchestration",
+        "Prometheus",
+        "Grafana",
+      ],
+      links: [],
     },
     {
-      title: 'DevOps Engineer',
-      company: 'StartupXYZ',
-      location: 'Austin, TX',
-      period: '2021 - 2022',
-      type: 'Full-time',
-      description: 'Built and maintained cloud infrastructure for a fast-growing fintech startup.',
+      title: "DevOps Engineer - Intern",
+      company: "Purplle.com",
+      location: "Mumbai, Maharashtra, India",
+      period: "January 2023 - June 2023",
+      type: "Remote",
+      description:
+        "Deployed a robust monitoring and alerting system using Prometheus and Grafana, achieving over 98% uptime and enabling faster issue detection and resolution. Collaborated with cross-functional teams to improve platform reliability and resolve high-impact production infrastructure issues.",
       achievements: [
-        'Designed multi-region AWS architecture serving 100K+ users',
-        'Implemented monitoring stack reducing MTTR by 60%',
-        'Automated backup and disaster recovery procedures',
-        'Mentored junior developers on DevOps best practices'
+        "Achieved >98% uptime by deploying a robust Prometheus and Grafana monitoring and alerting system, leading to faster issue detection and resolution.",
+        "Improved platform reliability by collaborating across teams to resolve high-impact issues in production infrastructure.",
       ],
-      technologies: ['AWS', 'Docker', 'Ansible', 'GitLab CI', 'ELK Stack', 'Redis'],
-      links: []
+      technologies: ["Prometheus", "Grafana", "GCP"],
+      links: ["monitor.purplle.com"],
     },
-    {
-      title: 'Cloud Infrastructure Specialist',
-      company: 'CloudFirst Consulting',
-      location: 'Remote',
-      period: '2020 - 2021',
-      type: 'Contract',
-      description: 'Provided cloud migration and DevOps consulting services to various clients.',
-      achievements: [
-        'Successfully migrated 15+ client workloads to cloud',
-        'Reduced infrastructure costs by 40% through optimization',
-        'Implemented CI/CD pipelines for multiple technology stacks',
-        'Delivered training workshops on cloud best practices'
-      ],
-      technologies: ['AWS', 'Azure', 'Terraform', 'Docker', 'GitHub Actions'],
-      links: []
-    },
-    {
-      title: 'Systems Administrator',
-      company: 'Enterprise Corp',
-      location: 'Dallas, TX',
-      period: '2019 - 2020',
-      type: 'Full-time',
-      description: 'Managed on-premises infrastructure and began cloud adoption initiatives.',
-      achievements: [
-        'Maintained 99.9% uptime for critical business systems',
-        'Led initial cloud adoption strategy and proof of concepts',
-        'Automated routine maintenance tasks saving 20 hours/week',
-        'Implemented centralized logging and monitoring solutions'
-      ],
-      technologies: ['Linux', 'VMware', 'Python', 'Bash', 'Nagios', 'MySQL'],
-      links: []
-    }
   ];
 
   const education = [
     {
-      degree: 'Bachelor of Science in Computer Science',
-      institution: 'University of Texas at Austin',
-      period: '2015 - 2019',
-      highlights: ['Graduated Summa Cum Laude', 'Computer Systems Track', 'Relevant Coursework: Distributed Systems, Network Security, Database Systems']
-    }
+      degree: "Bachelor of Science in Computer Science",
+      institution: "Maulana Abul Kalam Azad University of Technology, West Bengal",
+      period: "2019 - 2023",
+      highlights: [
+        "Relevant Coursework: Operating Systems, Network Security, Database Management Systems",
+      ],
+    },
   ];
 
   return (
@@ -87,7 +69,11 @@ const Experience = () => {
       <div className="container mx-auto max-w-4xl">
         {/* Header */}
         <div className="text-center mb-16">
-          <LinkableHeading level={1} id="professional-experience" className="text-4xl md:text-5xl font-bold mb-4">
+          <LinkableHeading
+            level={1}
+            id="professional-experience"
+            className="text-4xl md:text-5xl font-bold mb-4"
+          >
             Professional Experience
           </LinkableHeading>
           <p className="text-xl text-muted-foreground">
@@ -98,7 +84,11 @@ const Experience = () => {
         {/* Experience Timeline */}
         <div className="space-y-8 mb-16">
           {experiences.map((exp, index) => (
-            <Card key={index} className="card-hover animate-fade-in" style={{ animationDelay: `${index * 0.1}s` }}>
+            <Card
+              key={index}
+              className="card-hover animate-fade-in"
+              style={{ animationDelay: `${index * 0.1}s` }}
+            >
               <CardHeader>
                 <div className="flex flex-col md:flex-row md:items-start md:justify-between">
                   <div className="flex-1">
@@ -126,7 +116,7 @@ const Experience = () => {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground mb-6">{exp.description}</p>
-                
+
                 {/* Key Achievements */}
                 <div className="mb-6">
                   <h4 className="font-semibold mb-3">Key Achievements:</h4>
@@ -145,7 +135,11 @@ const Experience = () => {
                   <h4 className="font-semibold mb-3">Technologies Used:</h4>
                   <div className="flex flex-wrap gap-2">
                     {exp.technologies.map((tech) => (
-                      <Badge key={tech} variant="outline" className="tech-badge">
+                      <Badge
+                        key={tech}
+                        variant="outline"
+                        className="tech-badge"
+                      >
                         {tech}
                       </Badge>
                     ))}
@@ -157,7 +151,11 @@ const Experience = () => {
                   <div className="flex space-x-2">
                     {exp.links.map((link, i) => (
                       <Button key={i} variant="outline" size="sm" asChild>
-                        <a href={link.url} target="_blank" rel="noopener noreferrer">
+                        <a
+                          href={link.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
                           <ExternalLink className="h-4 w-4 mr-2" />
                           {link.label}
                         </a>
@@ -172,7 +170,11 @@ const Experience = () => {
 
         {/* Education */}
         <div>
-          <LinkableHeading level={2} id="education" className="text-3xl font-bold mb-8 text-center">
+          <LinkableHeading
+            level={2}
+            id="education"
+            className="text-3xl font-bold mb-8 text-center"
+          >
             Education
           </LinkableHeading>
           {education.map((edu, index) => (
@@ -180,11 +182,15 @@ const Experience = () => {
               <CardContent className="pt-6">
                 <div className="text-center">
                   <h3 className="text-xl font-semibold mb-2">{edu.degree}</h3>
-                  <p className="text-lg text-primary font-medium mb-2">{edu.institution}</p>
+                  <p className="text-lg text-primary font-medium mb-2">
+                    {edu.institution}
+                  </p>
                   <p className="text-muted-foreground mb-4">{edu.period}</p>
                   <div className="space-y-1">
                     {edu.highlights.map((highlight, i) => (
-                      <p key={i} className="text-sm text-muted-foreground">{highlight}</p>
+                      <p key={i} className="text-sm text-muted-foreground">
+                        {highlight}
+                      </p>
                     ))}
                   </div>
                 </div>
@@ -193,20 +199,25 @@ const Experience = () => {
           ))}
         </div>
 
-        {/* Download Resume CTA */}
+        {/* Download Resume CTA
         <div className="text-center mt-16">
-          <LinkableHeading level={3} id="resume" className="text-2xl font-semibold mb-4">
+          <LinkableHeading
+            level={3}
+            id="resume"
+            className="text-2xl font-semibold mb-4"
+          >
             Want the Full Details?
           </LinkableHeading>
           <p className="text-muted-foreground mb-6">
-            Download my complete resume for a comprehensive view of my experience and qualifications.
+            Download my complete resume for a comprehensive view of my
+            experience and qualifications.
           </p>
           <Button size="lg" asChild>
             <a href="#" download>
               Download Resume (PDF)
             </a>
           </Button>
-        </div>
+        </div> */}
       </div>
     </div>
   );
