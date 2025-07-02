@@ -49,7 +49,7 @@ const Experience = () => {
         "Improved platform reliability by collaborating across teams to resolve high-impact issues in production infrastructure.",
       ],
       technologies: ["Prometheus", "Grafana", "GCP"],
-      links: ["monitor.purplle.com"],
+      links: [],
     },
   ];
 
