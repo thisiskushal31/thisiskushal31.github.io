@@ -55,7 +55,7 @@ const Experience = () => {
 
   const education = [
     {
-      degree: "Bachelor of Science in Computer Science",
+      degree: "Bachelor of Technology in Computer Science",
       institution: "Maulana Abul Kalam Azad University of Technology, West Bengal",
       period: "2019 - 2023",
       highlights: [
