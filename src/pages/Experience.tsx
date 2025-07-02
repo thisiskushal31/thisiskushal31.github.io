@@ -77,7 +77,7 @@ const Experience = () => {
             Professional Experience
           </LinkableHeading>
           <p className="text-xl text-muted-foreground">
-            My journey from Systems Administration to DevOps Engineering
+            My journey in Software Engineering
           </p>
         </div>
 
