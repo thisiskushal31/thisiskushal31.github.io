@@ -144,7 +144,7 @@ export const portfolioConfig = {
   ],
 
   socialLinks: [
-    { name: "LinkedIn", url: "https://linkedin.com/in/thisiskushal31", icon: "Linkedin" },
+    { name: "LinkedIn", url: "https://www.linkedin.com/in/thisiskushalgupta/", icon: "Linkedin" },
     { name: "GitHub", url: "https://github.com/thisiskushal31", icon: "Github" }
   ]
 };
