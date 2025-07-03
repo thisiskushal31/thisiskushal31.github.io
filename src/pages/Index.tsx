@@ -234,7 +234,7 @@ const Index = () => {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div className="animate-slide-in">
               <div className="text-3xl md:text-4xl font-bold text-primary mb-2">
-                3+
+                2+
               </div>
               <div className="text-sm text-muted-foreground">Years DevOps</div>
             </div>
@@ -243,7 +243,7 @@ const Index = () => {
               style={{ animationDelay: "0.1s" }}
             >
               <div className="text-3xl md:text-4xl font-bold text-syntax-green mb-2">
-                15+
+                3+
               </div>
               <div className="text-sm text-muted-foreground">
                 Projects Deployed
@@ -282,9 +282,9 @@ const Index = () => {
             Ready to Collaborate?
           </h2>
           <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Whether you're looking for DevOps expertise or want to discuss the
-            latest in platform engineering, I'd love to connect and explore
-            opportunities.
+            Whether you're exploring cloud infrastructure, platform engineering, 
+            or DevOps automation, I’m always open to meaningful discussions 
+            and technical collaborations.
           </p>
           <Button asChild size="lg" className="text-lg px-8">
             <Link to="/contact">Get In Touch</Link>
