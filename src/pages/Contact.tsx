@@ -27,12 +27,12 @@ const Contact = () => {
       title: 'Consulting Projects',
       description: 'Infrastructure automation, cloud migration, DevOps transformation',
       tags: ['Short-term', 'Long-term', 'Advisory']
-    },
-    {
-      title: 'Speaking & Training',
-      description: 'Conference talks, workshops, team training on DevOps practices',
-      tags: ['Conferences', 'Workshops', 'Mentoring']
     }
+    // {
+    //   title: 'Speaking & Training',
+    //   description: 'Conference talks, workshops, team training on DevOps practices',
+    //   tags: ['Conferences', 'Workshops', 'Mentoring']
+    // }
   ];
 
   return (
