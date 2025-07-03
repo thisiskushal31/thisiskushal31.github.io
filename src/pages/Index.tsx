@@ -282,9 +282,9 @@ const Index = () => {
             Ready to Collaborate?
           </h2>
           <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Whether you're exploring cloud infrastructure, platform engineering, 
-            or DevOps automation, I’m always open to meaningful discussions 
-            and technical collaborations.
+            I’m always open to connecting on software engineering, platform engineering, 
+            cloud infrastructure, or DevOps projects—whether it’s about sharing ideas, 
+            solving challenges, or building something impactful together.
           </p>
           <Button asChild size="lg" className="text-lg px-8">
             <Link to="/contact">Get In Touch</Link>
