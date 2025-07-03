@@ -1,17 +1,38 @@
-import { Button } from '@/components/ui/button';
-import { Card, CardContent } from '@/components/ui/card';
-import { Badge } from '@/components/ui/badge';
-import { ArrowDown, Github, Linkedin, ArrowRight, ExternalLink } from 'lucide-react';
-import { Link } from 'react-router-dom';
-import { portfolioConfig } from '@/config/portfolio';
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import {
+  ArrowDown,
+  Github,
+  Linkedin,
+  ArrowRight,
+  ExternalLink,
+} from "lucide-react";
+import { Link } from "react-router-dom";
+import { portfolioConfig } from "@/config/portfolio";
 
 const Index = () => {
   const currentSkills = [
-    'DevOps', 'Docker', 'Kubernetes', 'AWS', 'Terraform', 'CI/CD', 'Python', 'Linux'
+    "DevOps",
+    "Containerization (Docker, Kubernetes)",
+    "Infrastructure as Code (Terraform, Ansible)",
+    "Cloud Platforms (AWS, Azure, GCP)",
+    "Monitoring (Prometheus, Grafana)",
+    "CI/CD Pipelines (Jenkins, GitHub Actions)",
+    "Scripting (Python, Bash)",
+    "Security Best Practices",
+    "Automation",
+    "System Design"
   ];
 
   const targetRoles = [
-    'DevSecOps Engineer', 'SRE', 'Cloud Engineer', 'Platform Engineer', 'Security Engineer'
+    "DevSecOps Engineer",
+    "DevOps Engineer",
+    "Software Engineer",
+    "SRE",
+    "Cloud Engineer",
+    "Platform Engineer",
+    "Security Engineer",
   ];
 
   return (
@@ -23,8 +44,12 @@ const Index = () => {
             {/* Name and Designation */}
             <div className="mb-8">
               <h1 className="text-5xl md:text-7xl font-bold mb-4 tracking-tight">
-                <span className="text-muted-foreground text-3xl md:text-4xl font-normal block mb-2">Hi, I'm</span>
-                <span className="gradient-text">{portfolioConfig.personal.name}</span>
+                <span className="text-muted-foreground text-3xl md:text-4xl font-normal block mb-2">
+                  Hi, I'm
+                </span>
+                <span className="gradient-text">
+                  {portfolioConfig.personal.name}
+                </span>
               </h1>
               <h2 className="text-3xl md:text-4xl font-semibold text-muted-foreground mb-2">
                 {portfolioConfig.personal.title}
@@ -44,7 +69,12 @@ const Index = () => {
               <Button asChild size="lg" className="text-lg px-8">
                 <Link to="/projects">View My Work</Link>
               </Button>
-              <Button asChild variant="outline" size="lg" className="text-lg px-8">
+              <Button
+                asChild
+                variant="outline"
+                size="lg"
+                className="text-lg px-8"
+              >
                 <Link to="/contact">Let's Connect</Link>
               </Button>
             </div>
@@ -53,9 +83,15 @@ const Index = () => {
             <div className="flex justify-center space-x-6">
               {portfolioConfig.socialLinks.map((social) => (
                 <Button key={social.name} variant="ghost" size="lg" asChild>
-                  <a href={social.url} target="_blank" rel="noopener noreferrer">
-                    {social.icon === 'Github' && <Github className="h-6 w-6" />}
-                    {social.icon === 'Linkedin' && <Linkedin className="h-6 w-6" />}
+                  <a
+                    href={social.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {social.icon === "Github" && <Github className="h-6 w-6" />}
+                    {social.icon === "Linkedin" && (
+                      <Linkedin className="h-6 w-6" />
+                    )}
                   </a>
                 </Button>
               ))}
@@ -86,7 +122,10 @@ const Index = () => {
 
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-4 max-w-4xl mx-auto">
             {currentSkills.map((skill) => (
-              <div key={skill} className="text-center p-4 rounded-lg border bg-card hover:shadow-md transition-shadow">
+              <div
+                key={skill}
+                className="text-center p-4 rounded-lg border bg-card hover:shadow-md transition-shadow"
+              >
                 <span className="text-sm font-medium">{skill}</span>
               </div>
             ))}
@@ -98,9 +137,12 @@ const Index = () => {
       <section className="py-20 px-4 bg-muted/30">
         <div className="container mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Current Focus</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              Current Focus
+            </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Leveraging my DevOps foundation to build secure, scalable platforms
+              Leveraging my DevOps and software engineering experience to build
+              secure, scalable systems and developer-friendly platforms.
             </p>
           </div>
 
@@ -108,9 +150,13 @@ const Index = () => {
             {/* Target Roles */}
             <Card className="card-hover">
               <CardContent className="p-8">
-                <h3 className="text-2xl font-semibold mb-4 text-syntax-green">Expanding Into</h3>
+                <h3 className="text-2xl font-semibold mb-4 text-syntax-green">
+                  Expanding Into
+                </h3>
                 <p className="text-muted-foreground mb-6">
-                  Growing expertise in security, platform engineering, and site reliability
+                  Continuing to grow in platform engineering, cloud
+                  architecture, security, and backend-focused software
+                  development.
                 </p>
                 <div className="space-y-2">
                   {targetRoles.map((role) => (
@@ -126,9 +172,12 @@ const Index = () => {
             {/* Experience CTA */}
             <Card className="card-hover">
               <CardContent className="p-8">
-                <h3 className="text-2xl font-semibold mb-4 text-syntax-blue">Experience</h3>
+                <h3 className="text-2xl font-semibold mb-4 text-syntax-blue">
+                  Experience
+                </h3>
                 <p className="text-muted-foreground mb-6">
-                  3+ years building and scaling cloud infrastructure for enterprise clients
+                  2+ years building and scaling cloud infrastructure for
+                  enterprise clients
                 </p>
                 <Button asChild className="w-full">
                   <Link to="/experience">View Experience</Link>
@@ -142,7 +191,9 @@ const Index = () => {
       {/* Projects Preview */}
       <section className="py-20 px-4">
         <div className="container mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Featured Projects</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+            Featured Projects
+          </h2>
           <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
             Infrastructure automation, monitoring solutions, and DevOps tooling
           </p>
@@ -155,14 +206,16 @@ const Index = () => {
       {/* Blog Preview */}
       <section className="py-20 px-4 bg-muted/30">
         <div className="container mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Latest Insights</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+            Latest Insights
+          </h2>
           <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
             Technical articles and best practices from the DevOps world
           </p>
           <Button asChild size="lg" variant="outline">
-            <a 
-              href="https://thisiskushal31.github.io/blog" 
-              target="_blank" 
+            <a
+              href="https://thisiskushal31.github.io/blog"
+              target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center"
             >
@@ -177,20 +230,43 @@ const Index = () => {
         <div className="container mx-auto">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div className="animate-slide-in">
-              <div className="text-3xl md:text-4xl font-bold text-primary mb-2">3+</div>
+              <div className="text-3xl md:text-4xl font-bold text-primary mb-2">
+                3+
+              </div>
               <div className="text-sm text-muted-foreground">Years DevOps</div>
             </div>
-            <div className="animate-slide-in" style={{ animationDelay: '0.1s' }}>
-              <div className="text-3xl md:text-4xl font-bold text-syntax-green mb-2">15+</div>
-              <div className="text-sm text-muted-foreground">Projects Deployed</div>
+            <div
+              className="animate-slide-in"
+              style={{ animationDelay: "0.1s" }}
+            >
+              <div className="text-3xl md:text-4xl font-bold text-syntax-green mb-2">
+                15+
+              </div>
+              <div className="text-sm text-muted-foreground">
+                Projects Deployed
+              </div>
             </div>
-            <div className="animate-slide-in" style={{ animationDelay: '0.2s' }}>
-              <div className="text-3xl md:text-4xl font-bold text-syntax-orange mb-2">99.9%</div>
-              <div className="text-sm text-muted-foreground">Uptime Achieved</div>
+            <div
+              className="animate-slide-in"
+              style={{ animationDelay: "0.2s" }}
+            >
+              <div className="text-3xl md:text-4xl font-bold text-syntax-orange mb-2">
+                99.9%
+              </div>
+              <div className="text-sm text-muted-foreground">
+                Uptime Achieved
+              </div>
             </div>
-            <div className="animate-slide-in" style={{ animationDelay: '0.3s' }}>
-              <div className="text-3xl md:text-4xl font-bold text-syntax-purple mb-2">5+</div>
-              <div className="text-sm text-muted-foreground">Cloud Platforms</div>
+            <div
+              className="animate-slide-in"
+              style={{ animationDelay: "0.3s" }}
+            >
+              <div className="text-3xl md:text-4xl font-bold text-syntax-purple mb-2">
+                5+
+              </div>
+              <div className="text-sm text-muted-foreground">
+                Cloud Platforms
+              </div>
             </div>
           </div>
         </div>
@@ -199,10 +275,13 @@ const Index = () => {
       {/* CTA Section */}
       <section className="py-20 px-4">
         <div className="container mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Ready to Collaborate?</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+            Ready to Collaborate?
+          </h2>
           <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Whether you're looking for DevOps expertise or want to discuss the latest in platform engineering, 
-            I'd love to connect and explore opportunities.
+            Whether you're looking for DevOps expertise or want to discuss the
+            latest in platform engineering, I'd love to connect and explore
+            opportunities.
           </p>
           <Button asChild size="lg" className="text-lg px-8">
             <Link to="/contact">Get In Touch</Link>
