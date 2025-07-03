@@ -14,12 +14,14 @@ import { portfolioConfig } from "@/config/portfolio";
 const Index = () => {
   const currentSkills = [
     "DevOps",
-    "Containerization (Docker, Kubernetes)",
-    "Infrastructure as Code (Terraform, Ansible)",
-    "Cloud Platforms (AWS, Azure, GCP)",
-    "Monitoring (Prometheus, Grafana)",
-    "CI/CD Pipelines (Jenkins, GitHub Actions)",
-    "Scripting (Python, Bash)",
+    "Containerization",
+    "Infrastructure as Code",
+    "GCP",
+    "AWS",
+    "Monitoring",
+    "CI/CD",
+    "Scripting",
+    "Python",
     "Security Best Practices",
     "Automation",
     "System Design"
