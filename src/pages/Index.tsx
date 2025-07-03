@@ -15,14 +15,14 @@ const Index = () => {
   const currentSkills = [
     "DevOps",
     "Containerization",
-    "Infrastructure as Code",
+    "IAC",
     "GCP",
     "AWS",
     "Monitoring",
     "CI/CD",
     "Scripting",
     "Python",
-    "Security Best Practices",
+    "Infra Security",
     "Automation",
     "System Design"
   ];
