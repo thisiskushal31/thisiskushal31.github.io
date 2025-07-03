@@ -5,7 +5,7 @@ export const portfolioConfig = {
     initials: "KG",
     title: "Software Engineer",
     subtitle: "Platform Engineering · DevOps · Cloud Infrastructure · Cloud-Native Software Development",
-    description: "Engineer passionate about building secure, scalable infrastructure and improving developer productivity through automation, observability, and cloud-native solutions. Continuously expanding skills across security-focused development and platform engineering.",
+    description: "Focused on secure, scalable infrastructure and developer productivity through automation, observability, and cloud-native solutions.",
     location: "Mumbai, India",
     timezone: "IST (UTC+5:30)",
     email: "guptakushal070@gmail.com"
