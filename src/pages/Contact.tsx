@@ -1,10 +1,19 @@
-
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
-import { Mail, MapPin, Clock, Calendar, Globe, BookOpen, Award, LinkIcon, CodeIcon } from 'lucide-react';
-import { portfolioConfig } from '@/config/portfolio';
-import LinkableHeading from '@/components/LinkableHeading';
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
+import {
+  Mail,
+  MapPin,
+  Clock,
+  Calendar,
+  Globe,
+  BookOpen,
+  Award,
+  LinkIcon,
+  CodeIcon,
+} from "lucide-react";
+import { portfolioConfig } from "@/config/portfolio";
+import LinkableHeading from "@/components/LinkableHeading";
 
 const Contact = () => {
   const iconMap = {
@@ -14,25 +23,28 @@ const Contact = () => {
     LinkIcon,
     BookOpen,
     Globe,
-    Award
+    Award,
   };
 
   const collaborationTypes = [
     {
-      title: 'Full-time Opportunities',
-      description: 'Software, Devops, DevSecOps, SRE, Platform Engineering, Cloud Engineering roles',
-      tags: ['Remote', 'Hybrid', 'On-site']
+      title: "Professional Opportunities",
+      description:
+        "Open to roles in Platform Engineering, DevOps, Cloud Infrastructure, SRE, and Software Engineering, with a focus on automation, scalability, and developer productivity.",
+      tags: ["Remote", "Hybrid", "On-site"],
     },
     {
-      title: 'Consulting Projects',
-      description: 'Infrastructure automation, cloud migration, DevOps transformation',
-      tags: ['Short-term', 'Long-term', 'Advisory']
-    }
-    // {
-    //   title: 'Speaking & Training',
-    //   description: 'Conference talks, workshops, team training on DevOps practices',
-    //   tags: ['Conferences', 'Workshops', 'Mentoring']
-    // }
+      title: "Technical Collaborations",
+      description:
+        "Available for select projects related to infrastructure automation, cloud architecture, CI/CD improvements, or DevOps best practices.",
+      tags: ["Short-term", "Long-term", "Advisory"],
+    },
+    {
+      title: "Speaking & Knowledge Sharing",
+      description:
+        "Happy to participate in conferences, podcasts, webinars, or deliver internal workshops on DevOps, Cloud Engineering, and Platform best practices.",
+      tags: ["Conferences", "Workshops", "Mentoring"],
+    },
   ];
 
   return (
@@ -40,12 +52,16 @@ const Contact = () => {
       <div className="container mx-auto max-w-4xl">
         {/* Header */}
         <div className="text-center mb-16">
-          <LinkableHeading level={1} id="contact" className="text-4xl md:text-5xl font-bold mb-4">
+          <LinkableHeading
+            level={1}
+            id="contact"
+            className="text-4xl md:text-5xl font-bold mb-4"
+          >
             Let's Connect
           </LinkableHeading>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Whether you're looking for DevOps expertise or want to discuss the latest in cloud engineering, 
-            I'd love to hear from you.
+            Whether you're looking for DevOps expertise or want to discuss the
+            latest in cloud engineering, I'd love to hear from you.
           </p>
         </div>
 
@@ -64,7 +80,7 @@ const Contact = () => {
                   <Mail className="h-4 w-4 text-muted-foreground" />
                   <div>
                     <p className="font-medium">Email</p>
-                    <a 
+                    <a
                       href={`mailto:${portfolioConfig.personal.email}`}
                       className="text-primary hover:underline"
                     >
@@ -77,7 +93,9 @@ const Contact = () => {
                   <MapPin className="h-4 w-4 text-muted-foreground" />
                   <div>
                     <p className="font-medium">Location</p>
-                    <p className="text-muted-foreground">{portfolioConfig.personal.location}</p>
+                    <p className="text-muted-foreground">
+                      {portfolioConfig.personal.location}
+                    </p>
                   </div>
                 </div>
 
@@ -85,7 +103,9 @@ const Contact = () => {
                   <Clock className="h-4 w-4 text-muted-foreground" />
                   <div>
                     <p className="font-medium">Timezone</p>
-                    <p className="text-muted-foreground">{portfolioConfig.personal.timezone}</p>
+                    <p className="text-muted-foreground">
+                      {portfolioConfig.personal.timezone}
+                    </p>
                   </div>
                 </div>
               </div>
@@ -99,24 +119,35 @@ const Contact = () => {
             </CardHeader>
             <CardContent className="space-y-3">
               {portfolioConfig.quickActions.map((action) => {
-                const IconComponent = iconMap[action.icon as keyof typeof iconMap];
+                const IconComponent =
+                  iconMap[action.icon as keyof typeof iconMap];
                 return (
-                  <Button 
+                  <Button
                     key={action.name}
-                    asChild 
-                    variant="outline" 
-                    className="w-full justify-start h-auto p-3" 
+                    asChild
+                    variant="outline"
+                    className="w-full justify-start h-auto p-3"
                   >
-                    <a 
-                      href={action.url} 
-                      target={action.url.startsWith('http') ? "_blank" : undefined}
-                      rel={action.url.startsWith('http') ? "noopener noreferrer" : undefined}
+                    <a
+                      href={action.url}
+                      target={
+                        action.url.startsWith("http") ? "_blank" : undefined
+                      }
+                      rel={
+                        action.url.startsWith("http")
+                          ? "noopener noreferrer"
+                          : undefined
+                      }
                     >
                       <div className="flex items-center space-x-3 w-full">
-                        {IconComponent && <IconComponent className="h-4 w-4 flex-shrink-0" />}
+                        {IconComponent && (
+                          <IconComponent className="h-4 w-4 flex-shrink-0" />
+                        )}
                         <div className="text-left">
                           <div className="font-medium">{action.name}</div>
-                          <div className="text-xs text-muted-foreground">{action.description}</div>
+                          <div className="text-xs text-muted-foreground">
+                            {action.description}
+                          </div>
                         </div>
                       </div>
                     </a>
@@ -129,15 +160,25 @@ const Contact = () => {
 
         {/* Collaboration Types */}
         <div className="mb-16">
-          <LinkableHeading level={2} id="collaboration" className="text-3xl font-bold text-center mb-8">
+          <LinkableHeading
+            level={2}
+            id="collaboration"
+            className="text-3xl font-bold text-center mb-8"
+          >
             Open to Collaboration
           </LinkableHeading>
           <div className="grid md:grid-cols-3 gap-6">
             {collaborationTypes.map((type, index) => (
-              <Card key={type.title} className="card-hover animate-fade-in" style={{ animationDelay: `${index * 0.1}s` }}>
+              <Card
+                key={type.title}
+                className="card-hover animate-fade-in"
+                style={{ animationDelay: `${index * 0.1}s` }}
+              >
                 <CardContent className="pt-6">
                   <h3 className="text-lg font-semibold mb-3">{type.title}</h3>
-                  <p className="text-sm text-muted-foreground mb-4">{type.description}</p>
+                  <p className="text-sm text-muted-foreground mb-4">
+                    {type.description}
+                  </p>
                   <div className="flex flex-wrap gap-1">
                     {type.tags.map((tag) => (
                       <Badge key={tag} variant="secondary" className="text-xs">
@@ -154,12 +195,17 @@ const Contact = () => {
         {/* Response Time */}
         <Card className="text-center">
           <CardContent className="pt-8">
-            <LinkableHeading level={3} id="response-time" className="text-2xl font-semibold mb-4">
+            <LinkableHeading
+              level={3}
+              id="response-time"
+              className="text-2xl font-semibold mb-4"
+            >
               Response Time
             </LinkableHeading>
             <p className="text-muted-foreground mb-4">
-              I typically respond to emails within <strong>24 hours</strong> during business days.
-              For urgent matters, please mention "URGENT" in your subject line.
+              I typically respond to emails within <strong>24 hours</strong>{" "}
+              during business days. For urgent matters, please mention "URGENT"
+              in your subject line.
             </p>
             <p className="text-sm text-muted-foreground">
               Best time to reach me: 10 AM - 5 PM IST(UTC+5:30), Monday - Friday
