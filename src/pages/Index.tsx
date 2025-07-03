@@ -14,7 +14,8 @@ import { portfolioConfig } from "@/config/portfolio";
 const Index = () => {
   const currentSkills = [
     "DevOps",
-    "Containerization",
+    "Kubernetes",
+    "Docker",
     "IAC",
     "GCP",
     "AWS",
@@ -22,7 +23,7 @@ const Index = () => {
     "CI/CD",
     "Scripting",
     "Python",
-    "Infra Security",
+    "Security",
     "Automation",
     "System Design"
   ];
