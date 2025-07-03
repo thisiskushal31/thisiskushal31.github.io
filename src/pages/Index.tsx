@@ -144,8 +144,7 @@ const Index = () => {
               Current Focus
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Leveraging my DevOps and software engineering experience to build
-              secure, scalable systems and developer-friendly platforms.
+              Leveraging my DevOps and software engineering experience to build secure, scalable systems and developer-friendly platforms
             </p>
           </div>
 
@@ -157,9 +156,7 @@ const Index = () => {
                   Expanding Into
                 </h3>
                 <p className="text-muted-foreground mb-6">
-                  Continuing to grow in platform engineering, cloud
-                  architecture, security, and backend-focused software
-                  development.
+                  Continuing to grow in platform engineering, cloud architecture, security, and backend-focused software development
                 </p>
                 <div className="space-y-2">
                   {targetRoles.map((role) => (
@@ -198,7 +195,7 @@ const Index = () => {
             Featured Projects
           </h2>
           <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Infrastructure automation, monitoring solutions, and DevOps tooling
+            Cloud infrastructure automation, developer tooling, and engineering solutions across software and platform systems
           </p>
           <Button asChild size="lg">
             <Link to="/projects">Explore Projects</Link>
@@ -213,7 +210,7 @@ const Index = () => {
             Latest Insights
           </h2>
           <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Technical articles and best practices from the DevOps world
+            Articles on software engineering, cloud architecture, platform automation, and DevOps best practices
           </p>
           <Button asChild size="lg" variant="outline">
             <a
@@ -236,7 +233,7 @@ const Index = () => {
               <div className="text-3xl md:text-4xl font-bold text-primary mb-2">
                 2+
               </div>
-              <div className="text-sm text-muted-foreground">Years DevOps</div>
+              <div className="text-sm text-muted-foreground">Years</div>
             </div>
             <div
               className="animate-slide-in"
@@ -282,9 +279,7 @@ const Index = () => {
             Ready to Collaborate?
           </h2>
           <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            I’m always open to connecting on software engineering, platform engineering, 
-            cloud infrastructure, or DevOps projects—whether it’s about sharing ideas, 
-            solving challenges, or building something impactful together.
+            I’m always open to connecting on software engineering, platform engineering, cloud infrastructure, or DevOps projects—whether it’s about sharing ideas, solving challenges, or building something impactful together
           </p>
           <Button asChild size="lg" className="text-lg px-8">
             <Link to="/contact">Get In Touch</Link>
