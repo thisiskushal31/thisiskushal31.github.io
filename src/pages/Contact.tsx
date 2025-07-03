@@ -2,20 +2,19 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
-import { Mail, MapPin, Clock, Download, Calendar, Globe, BookOpen, Folder, Award, Briefcase } from 'lucide-react';
+import { Mail, CodeIcon, Calendar, LinkIcon, BookOpen, Globe, Award } from 'lucide-react';
 import { portfolioConfig } from '@/config/portfolio';
 import LinkableHeading from '@/components/LinkableHeading';
 
 const Contact = () => {
   const iconMap = {
     Mail,
-    Download,
+    CodeIcon,
     Calendar,
-    Globe,
+    LinkIcon,
     BookOpen,
-    Folder,
-    Award,
-    Briefcase
+    Globe,
+    Award
   };
 
   const collaborationTypes = [
@@ -163,7 +162,7 @@ const Contact = () => {
               For urgent matters, please mention "URGENT" in your subject line.
             </p>
             <p className="text-sm text-muted-foreground">
-              Best time to reach me: 9 AM - 6 PM PST, Monday - Friday
+              Best time to reach me: 10 AM - 5 PM IST(UTC+5:30), Monday - Friday
             </p>
           </CardContent>
         </Card>
