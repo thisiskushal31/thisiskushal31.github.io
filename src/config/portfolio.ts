@@ -133,7 +133,7 @@ export const portfolioConfig = {
     { name: "Email", url: "mailto:guptakushal070@gmail.com", icon:"Mail", description: "Get in touch directly" },
     { name: "LinkedIn", url: "https://linkedin.com/in/thisiskushal31", icon:"Globe", description: "Professional network" },
     { name: "GitHub", url: "https://github.com/thisiskushal31", icon:"CodeIcon", description: "Code repositories" },
-    { name: "Calendar", url: "https://calendar.google.com/calendar/render?action=TEMPLATE&text=Meeting+with+Kushal&details=Please+add+a+Google+Meet+link+after+saving.&location=Online", icon:"Calendar", description: "Schedule a meeting" },
+    { name: "Calendar", url: "https://calendar.google.com/calendar/render?action=TEMPLATE&text=Meeting+with+Kushal&details=Please+add+a+Google+Meet+link+after+saving.&location=Online&add=guptakushal070@gmail.com", icon:"Calendar", description: "Schedule a meeting" },
     { name: "X.com", url: "https://x.com/thisis_kushal", icon:"LinkIcon", description: "Let's connect on X" },
     { name: "Hashnode", url: "https://thisiskushal.hashnode.dev/", icon:"LinkIcon", description: "View my articles on Hashnode" },
     { name: "Medium", url: "https://thisiskushalgupta.medium.com/", icon:"LinkIcon", description: "Read my articles on Medium" },
