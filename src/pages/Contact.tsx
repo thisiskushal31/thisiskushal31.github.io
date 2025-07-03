@@ -36,7 +36,7 @@ const Contact = () => {
     {
       title: "Technical Collaborations",
       description:
-        "Available for select projects related to infrastructure automation, cloud architecture, CI/CD improvements, or DevOps best practices.",
+        "Available for select projects related to software development,infrastructure automation, cloud architecture, CI/CD improvements, or DevOps best practices.",
       tags: ["Short-term", "Long-term", "Advisory"],
     },
     {
