@@ -265,7 +265,7 @@ const Index = () => {
               style={{ animationDelay: "0.3s" }}
             >
               <div className="text-3xl md:text-4xl font-bold text-syntax-purple mb-2">
-                5+
+                2+
               </div>
               <div className="text-sm text-muted-foreground">
                 Cloud Platforms
