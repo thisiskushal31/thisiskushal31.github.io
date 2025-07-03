@@ -20,7 +20,7 @@ const Contact = () => {
   const collaborationTypes = [
     {
       title: 'Full-time Opportunities',
-      description: 'DevSecOps, SRE, Platform Engineering, Cloud Engineering roles',
+      description: 'Software, Devops, DevSecOps, SRE, Platform Engineering, Cloud Engineering roles',
       tags: ['Remote', 'Hybrid', 'On-site']
     },
     {
