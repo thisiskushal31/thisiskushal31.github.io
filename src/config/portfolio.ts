@@ -10,7 +10,7 @@ export const portfolioConfig = {
     timezone: "IST (UTC+5:30)",
     email: "guptakushal070@gmail.com"
   },
-  
+
   skills: {
     categories: [
       {
@@ -19,13 +19,13 @@ export const portfolioConfig = {
         skills: ["AWS", "Azure", "Google Cloud", "DigitalOcean"]
       },
       {
-        title: "DevOps Tools", 
+        title: "DevOps Tools",
         icon: "🔧",
         skills: ["Docker", "Kubernetes", "Terraform", "Ansible"]
       },
       {
         title: "CI/CD & Automation",
-        icon: "🚀", 
+        icon: "🚀",
         skills: ["Jenkins", "GitHub Actions", "GitLab CI", "Azure DevOps"]
       },
       {
@@ -129,19 +129,19 @@ export const portfolioConfig = {
   ],
 
   quickActions: [
-    { name: "Email", url: "mailto:guptakushal070@gmail.com", icon: "Mail", description: "Get in touch directly" },
-    { name: "LinkedIn", url: "https://linkedin.com/in/thisiskushal31", icon: "Linkedin", description: "Professional network" },
-    { name: "GitHub", url: "https://github.com/thisiskushal31", icon: "Github", description: "Code repositories" },
-    { name: "Calendar", url: "https://calendar.google.com/calendar/render?action=TEMPLATE&text=Meeting+with+Kushal&details=Please+add+a+Google+Meet+link+after+saving.&location=Online", icon: "Calendar", description: "Schedule a meeting" },
-    { name: "X.com", url: "https://x.com/thisis_kushal", icon: "X", description: "Let's connect on X" },
-    { name: "Hashnode", url: "https://thisiskushal.hashnode.dev/", icon: "Hashnode", description: "View my articles on Hashnode" },
-    { name: "Medium", url: "https://thisiskushalgupta.medium.com/", icon: "Medium", description: "Read my articles on Medium" },
-    { name: "Self-Hosted Blog", url: "https://thisiskushal31.github.io/blog/#", icon: "Person", description: "Read my articles on Self-Hosted Site" },
-    { name: "Codepen", url: "https://codepen.io/thisiskushal31/", icon: "Codepen", description: "Browse my projects on codepen" },
-    { name: "Leetcode", url: "https://leetcode.com/u/Quick067/", icon: "Code", description: "Leetcode profile" },
-    { name: "GCP-Badge", url: "https://www.cloudskillsboost.google/public_profiles/69072982-dd9b-46f1-9e9d-606cef93e04a", icon: "Award", description: "Google Cloud Skill Boost Badges by Qwiklabs" }
+    { name: "Email", url: "mailto:guptakushal070@gmail.com", icon:"", description: "Get in touch directly" },
+    { name: "LinkedIn", url: "https://linkedin.com/in/thisiskushal31", icon:"", description: "Professional network" },
+    { name: "GitHub", url: "https://github.com/thisiskushal31", icon:"", description: "Code repositories" },
+    { name: "Calendar", url: "https://calendar.google.com/calendar/render?action=TEMPLATE&text=Meeting+with+Kushal&details=Please+add+a+Google+Meet+link+after+saving.&location=Online", icon:"", description: "Schedule a meeting" },
+    { name: "X.com", url: "https://x.com/thisis_kushal", icon:"", description: "Let's connect on X" },
+    { name: "Hashnode", url: "https://thisiskushal.hashnode.dev/", icon:"", description: "View my articles on Hashnode" },
+    { name: "Medium", url: "https://thisiskushalgupta.medium.com/", icon:"", description: "Read my articles on Medium" },
+    { name: "Self-Hosted Blog", url: "https://thisiskushal31.github.io/blog/#", icon:"", description: "Read my articles on Self-Hosted Site" },
+    { name: "Codepen", url: "https://codepen.io/thisiskushal31/", icon:"", description: "Browse my projects on codepen" },
+    { name: "Leetcode", url: "https://leetcode.com/u/Quick067/", icon:"", description: "Leetcode profile" },
+    { name: "GCP-Badge", url: "https://www.cloudskillsboost.google/public_profiles/69072982-dd9b-46f1-9e9d-606cef93e04a", icon:"", description: "Google Cloud Skill Boost Badges by Qwiklabs" }
   ],
-  
+
   socialLinks: [
     { name: "LinkedIn", url: "https://linkedin.com/in/thisiskushal31", icon: "Linkedin" },
     { name: "GitHub", url: "https://github.com/thisiskushal31", icon: "Github" }
