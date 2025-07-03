@@ -2,7 +2,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
-import { Mail, CodeIcon, Calendar, LinkIcon, BookOpen, Globe, Award } from 'lucide-react';
+import { Mail, CodeIcon, Calendar, LinkIcon, BookOpen, Globe, Award, MapPin } from 'lucide-react';
 import { portfolioConfig } from '@/config/portfolio';
 import LinkableHeading from '@/components/LinkableHeading';
 
