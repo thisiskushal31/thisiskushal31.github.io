@@ -131,7 +131,7 @@ export const portfolioConfig = {
 // 
   quickActions: [
     { name: "Email", url: "mailto:guptakushal070@gmail.com", icon:"Mail", description: "Get in touch directly" },
-    { name: "LinkedIn", url: "https://linkedin.com/in/thisiskushal31", icon:"Globe", description: "Professional network" },
+    { name: "LinkedIn", url: "https://linkedin.com/in/thisiskushalgupta", icon:"Globe", description: "Professional network" },
     { name: "GitHub", url: "https://github.com/thisiskushal31", icon:"CodeIcon", description: "Code repositories" },
     { name: "Calendar", url: "https://calendar.google.com/calendar/render?action=TEMPLATE&text=Meeting+with+Kushal&details=Please+add+a+Google+Meet+link+after+saving.&location=Online&add=guptakushal070@gmail.com", icon:"Calendar", description: "Schedule a meeting" },
     { name: "X.com", url: "https://x.com/thisis_kushal", icon:"LinkIcon", description: "Let's connect on X" },
