@@ -16,32 +16,37 @@ export const portfolioConfig = {
       {
         title: "Cloud Platforms",
         icon: "☁️",
-        skills: ["AWS", "Azure", "Google Cloud", "DigitalOcean"]
+        skills: ["Google Cloud Platform (GCP)", "Amazon Web Services (AWS)"]
       },
       {
-        title: "DevOps Tools",
+        title: "DevOps & Platform Tools",
         icon: "🔧",
-        skills: ["Docker", "Kubernetes", "Terraform", "Ansible"]
+        skills: ["Terraform", "Docker", "Kubernetes", "GitOps", "Helm"]
       },
       {
         title: "CI/CD & Automation",
         icon: "🚀",
-        skills: ["Jenkins", "GitHub Actions", "GitLab CI", "Azure DevOps"]
+        skills: ["Jenkins", "GitHub Actions", "GitLab CI", "ArgoCD"]
       },
       {
-        title: "Programming",
+        title: "Programming & Scripting",
         icon: "💻",
-        skills: ["Python", "Bash/Shell", "JavaScript", "Go"]
+        skills: ["Python", "Shell Scripting(Bash)", "JavaScript", "Java", "Go"]
       },
       {
         title: "Security & Monitoring",
         icon: "🔒",
-        skills: ["Prometheus", "Grafana", "ELK Stack", "Vault"]
+        skills: ["Prometheus", "Grafana", "HashiCorp Vault", "IAM & Security Policies", "Secrets Management"]
       },
       {
-        title: "Databases",
+        title: "Databases & Messaging",
         icon: "🗄️",
-        skills: ["PostgreSQL", "Redis", "MongoDB", "MinIO"]
+        skills: ["MongoDB", "Redis", "SQL", "Elasticsearch", "Kafka"]
+      },
+      {
+        title: "Software Engineering Foundations",
+        icon: "📚",
+        skills: ["Data Structures & Algorithms", "Operating Systems", "Networking", "System Design", "Object-Oriented Programming (OOP)", "Concurrency", "Scalability"]
       }
     ]
   },
@@ -128,19 +133,19 @@ export const portfolioConfig = {
     }
   ],
 
-// 
+  // 
   quickActions: [
-    { name: "Email", url: "mailto:guptakushal070@gmail.com", icon:"Mail", description: "Get in touch directly" },
-    { name: "LinkedIn", url: "https://linkedin.com/in/thisiskushalgupta", icon:"Globe", description: "Professional network" },
-    { name: "GitHub", url: "https://github.com/thisiskushal31", icon:"CodeIcon", description: "Code repositories" },
-    { name: "Calendar", url: "https://calendar.google.com/calendar/render?action=TEMPLATE&text=Meeting+with+Kushal&details=Please+add+a+Google+Meet+link+after+saving.&location=Online&add=guptakushal070@gmail.com", icon:"Calendar", description: "Schedule a meeting" },
-    { name: "X.com", url: "https://x.com/thisis_kushal", icon:"LinkIcon", description: "Let's connect on X" },
-    { name: "Hashnode", url: "https://thisiskushal.hashnode.dev/", icon:"LinkIcon", description: "View my articles on Hashnode" },
-    { name: "Medium", url: "https://thisiskushalgupta.medium.com/", icon:"LinkIcon", description: "Read my articles on Medium" },
-    { name: "Self-Hosted Blog", url: "https://thisiskushal31.github.io/blog/#", icon:"LinkIcon", description: "Read my articles on Self-Hosted Site" },
-    { name: "Codepen", url: "https://codepen.io/thisiskushal31/", icon:"LinkIcon", description: "Browse my projects on codepen" },
-    { name: "Leetcode", url: "https://leetcode.com/u/Quick067/", icon:"LinkIcon", description: "Leetcode profile" },
-    { name: "GCP-Badge", url: "https://www.cloudskillsboost.google/public_profiles/69072982-dd9b-46f1-9e9d-606cef93e04a", icon:"Award", description: "Google Cloud Skill Boost Badges by Qwiklabs" }
+    { name: "Email", url: "mailto:guptakushal070@gmail.com", icon: "Mail", description: "Get in touch directly" },
+    { name: "LinkedIn", url: "https://linkedin.com/in/thisiskushalgupta", icon: "Globe", description: "Professional network" },
+    { name: "GitHub", url: "https://github.com/thisiskushal31", icon: "CodeIcon", description: "Code repositories" },
+    { name: "Calendar", url: "https://calendar.google.com/calendar/render?action=TEMPLATE&text=Meeting+with+Kushal&details=Please+add+a+Google+Meet+link+after+saving.&location=Online&add=guptakushal070@gmail.com", icon: "Calendar", description: "Schedule a meeting" },
+    { name: "X.com", url: "https://x.com/thisis_kushal", icon: "LinkIcon", description: "Let's connect on X" },
+    { name: "Hashnode", url: "https://thisiskushal.hashnode.dev/", icon: "LinkIcon", description: "View my articles on Hashnode" },
+    { name: "Medium", url: "https://thisiskushalgupta.medium.com/", icon: "LinkIcon", description: "Read my articles on Medium" },
+    { name: "Self-Hosted Blog", url: "https://thisiskushal31.github.io/blog/#", icon: "LinkIcon", description: "Read my articles on Self-Hosted Site" },
+    { name: "Codepen", url: "https://codepen.io/thisiskushal31/", icon: "LinkIcon", description: "Browse my projects on codepen" },
+    { name: "Leetcode", url: "https://leetcode.com/u/Quick067/", icon: "LinkIcon", description: "Leetcode profile" },
+    { name: "GCP-Badge", url: "https://www.cloudskillsboost.google/public_profiles/69072982-dd9b-46f1-9e9d-606cef93e04a", icon: "Award", description: "Google Cloud Skill Boost Badges by Qwiklabs" }
   ],
 
   socialLinks: [
