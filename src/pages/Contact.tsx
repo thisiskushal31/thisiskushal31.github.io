@@ -61,7 +61,7 @@ const Contact = () => {
           </LinkableHeading>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Whether you're looking for DevOps expertise or want to discuss the
-            latest in cloud engineering, I'd love to hear from you.
+            latest in cloud engineering, I'd love to hear from you
           </p>
         </div>
 

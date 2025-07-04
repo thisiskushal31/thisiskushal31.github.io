@@ -37,7 +37,7 @@ const Projects = () => {
             Featured Projects
           </LinkableHeading>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            A showcase of infrastructure automation, monitoring solutions, and DevOps tooling projects
+            A collection of projects covering software engineering, cloud infrastructure, automation, and monitoring — focused on building reliable, scalable, and efficient systems
           </p>
         </div>
 
@@ -132,10 +132,10 @@ const Projects = () => {
             Explore More Projects
           </LinkableHeading>
           <p className="text-muted-foreground mb-6">
-            Check out my GitHub profile for more DevOps tools, automation scripts, and infrastructure projects.
+            Explore more of my work in software, automation, and cloud on GitHub.
           </p>
           <Button size="lg" asChild>
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/thisiskushal31" target="_blank" rel="noopener noreferrer">
               <Github className="h-5 w-5 mr-2" />
               View All Projects on GitHub
             </a>
