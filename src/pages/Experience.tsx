@@ -13,14 +13,15 @@ const Experience = () => {
       period: "June 2023 - Present",
       type: "Hybrid",
       description:
-        "Automated infra, cut cloud costs 40%+, achieved 99% uptime, led CI/CD and security compliance, and enabled resilient, scalable deployments at Purplle.com.",
+        "Led automation, cost optimization, CI/CD, and cloud infrastructure initiatives to boost uptime, security, and scalability at Purplle.com.",
       achievements: [
-        "Automated 40%+ of infrastructure provisioning using CI/CD, Terraform, Jenkins, and GitOps, significantly boosting delivery speed.",
-        "Achieved and maintained 99%+ service uptime by managing critical production infrastructure and ensuring consistent availability during peak loads.",
-        "Optimized cloud spend by 40-50% on GCP/AWS via continuous rightsizing, autoscaling, usage audits, and resource cleanup.",
-        "Enhanced system resilience and security by designing and implementing backup/disaster recovery solutions, deploying an on-call alerting system (reducing MTTR from 30 to 7 minutes), and leading IAM role minimization.",
-        "Enabled critical business operations by independently deploying infrastructure for the Purplle.com POS application and Hypertest (third-party testing tool), ensuring smooth handovers to dev teams.",
-        "Collaborated with platform teams to troubleshoot and resolve high-impact infrastructure issues across services, strengthening system reliability.",
+        "Automated 40%+ of infrastructure provisioning using Terraform, Jenkins, and GitOps pipelines, accelerating deployment speed and reducing manual tasks.",
+        "Achieved and sustained 99%+ service uptime by managing production infrastructure, ensuring availability during high-traffic sales events.",
+        "Reduced cloud costs by 40-50% on GCP and AWS through autoscaling, rightsizing, resource cleanup, and usage audits.",
+        "Decreased incident response time (MTTR) from 30 minutes to 7 minutes by implementing on-call alerting systems with Prometheus and Grafana.",
+        "Designed and deployed disaster recovery and backup solutions for critical databases and services using Python and automation scripts, enhancing resilience and data integrity.",
+        "Led infrastructure deployment for Nexus POS (in-house retail POS) and Hypertest (third-party QA testing tool), ensuring reliable operations and smooth handover to DevOps and development teams.",
+        "Collaborated cross-functionally to diagnose and resolve production issues, improving overall system reliability and incident resolution workflows.",
       ],
       technologies: [
         "GCP",
@@ -30,9 +31,9 @@ const Experience = () => {
         "GitOps",
         "Python",
         "CI/CD",
-        "Container Orchestration",
         "Prometheus",
         "Grafana",
+        "Container Orchestration",
       ],
       links: [],
     },
@@ -43,10 +44,10 @@ const Experience = () => {
       period: "January 2023 - June 2023",
       type: "Remote",
       description:
-        "Deployed a robust monitoring and alerting system using Prometheus and Grafana, achieving over 98% uptime and enabling faster issue detection and resolution. Collaborated with cross-functional teams to improve platform reliability and resolve high-impact production infrastructure issues.",
+        "Built and deployed monitoring systems for cloud infrastructure to improve uptime and system reliability.",
       achievements: [
-        "Achieved >98% uptime by deploying a robust Prometheus and Grafana monitoring and alerting system, leading to faster issue detection and resolution.",
-        "Improved platform reliability by collaborating across teams to resolve high-impact issues in production infrastructure.",
+        "Implemented monitoring and alerting stack using Prometheus and Grafana, achieving >98% uptime and enabling faster incident response.",
+        "Collaborated with DevOps and platform teams to troubleshoot high-impact production issues, improving platform stability and observability.",
       ],
       technologies: ["Prometheus", "Grafana", "GCP"],
       links: [],
@@ -56,10 +57,11 @@ const Experience = () => {
   const education = [
     {
       degree: "Bachelor of Technology in Computer Science",
-      institution: "Maulana Abul Kalam Azad University of Technology, West Bengal",
+      institution:
+        "Maulana Abul Kalam Azad University of Technology, West Bengal",
       period: "2019 - 2023",
       highlights: [
-        "Relevant Coursework: Operating Systems, Network Security, Database Management Systems",
+        "Relevant Coursework: Operating Systems, Data Structures, Algorithms, Computer Networks, Database Management Systems",
       ],
     },
   ];

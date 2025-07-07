@@ -19,117 +19,134 @@ export const portfolioConfig = {
         skills: ["Google Cloud Platform (GCP)", "Amazon Web Services (AWS)"]
       },
       {
-        title: "DevOps & Platform Tools",
+        title: "DevOps & Automation",
         icon: "🔧",
-        skills: ["Terraform", "Docker", "Kubernetes", "GitOps", "Helm"]
-      },
-      {
-        title: "CI/CD & Automation",
-        icon: "🚀",
-        skills: ["Jenkins", "GitHub Actions", "GitLab CI", "ArgoCD"]
+        skills: [
+          "Terraform",
+          "Docker",
+          "Kubernetes",
+          "GitOps",
+          "Helm",
+          "ArgoCD",
+          "GitHub Actions",
+          "Jenkins",
+          "GitLab CI"
+        ]
       },
       {
         title: "Programming & Scripting",
         icon: "💻",
-        skills: ["Python", "Shell Scripting(Bash)", "JavaScript", "Java", "Go"]
+        skills: [
+          "Python", 
+          "C/C++", 
+          "JavaScript", 
+          "Bash/Shell", 
+          "Java"
+        ]
+      },
+      {
+        title: "Software Development",
+        icon: "🖥️",
+        skills: [
+          "React.js",
+          "Node.js",
+          "Express.js",
+          "Spring Boot",
+          "REST APIs",
+          "Microservices",
+          "Cloud-Native Applications"
+        ]
       },
       {
         title: "Security & Monitoring",
         icon: "🔒",
-        skills: ["Prometheus", "Grafana", "HashiCorp Vault", "IAM & Security Policies", "Secrets Management"]
+        skills: [
+          "Prometheus",
+          "Grafana",
+          "Secrets Management",
+          "IAM & Security Policies",
+          "Cloud Infrastructure Security Practices"
+        ]
       },
       {
         title: "Databases & Messaging",
         icon: "🗄️",
-        skills: ["MongoDB", "Redis", "SQL", "Elasticsearch", "Kafka"]
+        skills: ["MySQL", "MongoDB", "Redis", "Elasticsearch"]
       },
       {
-        title: "Software Engineering Foundations",
+        title: "Computer Science Fundamentals",
         icon: "📚",
-        skills: ["Data Structures & Algorithms", "Operating Systems", "Networking", "System Design", "Object-Oriented Programming (OOP)", "Concurrency", "Scalability"]
+        skills: [
+          "Data Structures",
+          "Algorithms",
+          "System Design",
+          "Networking",
+          "Operating Systems",
+          "Object-Oriented Programming (OOP)",
+          "Concurrency",
+          "Scalability"
+        ]
       }
     ]
   },
 
   projects: [
     {
-      title: 'Cloud Infrastructure Automation Platform',
-      description: 'Built a comprehensive infrastructure-as-code platform using Terraform and Ansible to automate cloud resource provisioning across multiple providers.',
-      technologies: ['Terraform', 'Ansible', 'AWS', 'Azure', 'Python', 'Jenkins'],
+      title: 'Infra Provision System Automation',
+      description: 'Automated infrastructure provisioning, backups, and role management to reduce manual effort, improve reliability, and accelerate cloud operations.',
+      technologies: ['Terraform', 'Python', 'Bash', 'GitLab CI', 'Jenkins', 'GCP'],
       features: [
-        'Multi-cloud resource provisioning',
-        'Automated security compliance checks',
-        'Cost optimization recommendations',
-        'Self-service infrastructure portal'
+        'Automated IAM role management using Python and CI/CD pipelines, reducing role misconfigurations and manual overhead.',
+        'Developed backup automation for MySQL, MongoDB, Elasticsearch, and GCP VMs using Python, Bash, and cron, improving data resilience.',
+        'Provisioned infrastructure using Terraform and GitOps workflows, reducing deployment time by 50% and improving environment consistency.',
+        'Enabled scheduled automated backups, ensuring reliable disaster recovery processes and compliance with backup policies.'
       ],
-      links: {
-        github: 'https://github.com',
-        demo: 'https://demo.com'
-      },
+      links: {},
       status: 'Production',
       category: 'DevOps'
     },
     {
-      title: 'Kubernetes Monitoring Stack',
-      description: 'Designed and implemented a comprehensive monitoring solution for Kubernetes clusters using Prometheus, Grafana, and custom alerting rules.',
-      technologies: ['Kubernetes', 'Prometheus', 'Grafana', 'Helm', 'Go', 'Docker'],
+      title: 'Nexus - Internal Inhouse POS Application',
+      description: 'Deployed and optimized resilient infrastructure for Nexus, an internal POS system, ensuring high availability and robust monitoring for retail operations.',
+      technologies: ['GCP', 'Grafana', 'Prometheus', 'Python', 'WAF', 'Terraform'],
       features: [
-        'Custom Prometheus operators',
-        'Multi-cluster monitoring',
-        'Automated alert routing',
-        'SLI/SLO tracking dashboards'
+        'Designed and deployed high-availability infrastructure using Terraform and GCP services, ensuring uninterrupted retail operations.',
+        'Integrated monitoring and alerting with Grafana and Prometheus, enabling real-time system performance visibility.',
+        'Implemented WAF to protect the application from common web threats, enhancing security posture.',
+        'Successfully transitioned infrastructure management to DevOps and development teams post-deployment for long-term sustainability.'
       ],
-      links: {
-        github: 'https://github.com'
-      },
+      links: {},
       status: 'Production',
       category: 'Platform Engineering'
     },
     {
-      title: 'CI/CD Pipeline as Code',
-      description: 'Created reusable CI/CD pipeline templates that can be deployed across different projects with minimal configuration.',
-      technologies: ['GitHub Actions', 'Docker', 'Kubernetes', 'ArgoCD', 'YAML'],
+      title: 'Monitoring & Alerting Automation',
+      description: 'Automated infrastructure monitoring and alerting to improve incident response, reduce downtime, and proactively detect issues.',
+      technologies: ['Grafana', 'Prometheus', 'Python', 'GCP'],
       features: [
-        'Template-based pipeline generation',
-        'Automated security scanning',
-        'Multi-environment deployments',
-        'Rollback automation'
-      ],
-      links: {
-        github: 'https://github.com'
-      },
-      status: 'Active Development',
-      category: 'DevOps'
-    },
-    {
-      title: 'Security Compliance Automation',
-      description: 'Developed automated security compliance checking tools that integrate with CI/CD pipelines to ensure security standards.',
-      technologies: ['Python', 'Docker', 'Trivy', 'OWASP ZAP', 'Jenkins'],
-      features: [
-        'Vulnerability scanning automation',
-        'Compliance report generation',
-        'Policy-as-code implementation',
-        'Integration with popular CI/CD tools'
+        'Migrated 100% of legacy alerting systems to Grafana Alerts, enabling unified monitoring across all infrastructure components.',
+        'Implemented on-call alerting workflows that reduced mean time to recovery (MTTR) from 30 minutes to 7 minutes.',
+        'Built custom Grafana dashboards for proactive monitoring of system health, capacity, and performance metrics.',
+        'Established automated alert routing and escalation policies, improving response times and incident handling.'
       ],
       links: {},
-      status: 'Beta',
-      category: 'DevSecOps'
+      status: 'Production',
+      category: 'Platform Engineering'
     },
     {
-      title: 'Microservices Platform',
-      description: 'Built a complete platform for microservices deployment with service mesh, monitoring, and automated scaling.',
-      technologies: ['Kubernetes', 'Istio', 'React', 'Node.js', 'PostgreSQL'],
+      title: 'Cloud Infrastructure Security Enhancements',
+      description: 'Strengthened cloud infrastructure security by automating key security controls, minimizing risks, and reducing attack surface.',
+      technologies: ['GCP', 'Python', 'Terraform', 'Kubernetes', 'Secrets Manager'],
       features: [
-        'Service mesh integration',
-        'Automated service discovery',
-        'Load balancing and traffic management',
-        'Comprehensive monitoring dashboard'
+        'Automated IAM role minimization and unused service account cleanup, reducing unauthorized access risks.',
+        'Implemented Secure Boot and automated firewall rule cleanups to harden infrastructure security.',
+        'Deployed Secrets Manager for secure handling of sensitive data across Kubernetes (GKE), VMs, and services.',
+        'Enabled automated network logging and public IP cleanup, minimizing exposure to external threats.',
+        'Adopted zero-trust security principles across cloud resources to enforce least privilege access and compliance.'
       ],
-      links: {
-        demo: 'https://demo.com'
-      },
+      links: {},
       status: 'Production',
-      category: 'Software Engineering'
+      category: 'DevSecOps'
     }
   ],
 

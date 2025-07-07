@@ -13,19 +13,13 @@ import { portfolioConfig } from "@/config/portfolio";
 
 const Index = () => {
   const currentSkills = [
-    "DevOps",
-    "Kubernetes",
-    "Docker",
-    "IAC",
-    "GCP",
-    "AWS",
-    "Monitoring",
+    "Programming & Scripting",
+    "Security & Monitoring",
+    "Database Management",
+    "Cloud Infrastructure",
+    "Infrastructure as Code (IaC)",
     "CI/CD",
-    "Scripting",
-    "Python",
-    "Security",
-    "Automation",
-    "System Design"
+    "Software Programming"
   ];
 
   const targetRoles = [
@@ -123,11 +117,14 @@ const Index = () => {
             </Button>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-4 max-w-4xl mx-auto">
+          <div
+            className="grid gap-4 max-w-4xl mx-auto"
+            style={{ gridTemplateColumns: "repeat(auto-fit, minmax(180px, 1fr))" }}
+          >
             {currentSkills.map((skill) => (
               <div
                 key={skill}
-                className="text-center p-4 rounded-lg border bg-card hover:shadow-md transition-shadow"
+                className="text-center p-4 rounded-lg border bg-card hover:shadow-md transition-shadow min-w-[180px]"
               >
                 <span className="text-sm font-medium">{skill}</span>
               </div>
@@ -144,7 +141,8 @@ const Index = () => {
               Current Focus
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Leveraging my DevOps and software engineering experience to build secure, scalable systems and developer-friendly platforms
+              Leveraging my DevOps and software engineering experience to build
+              secure, scalable systems and developer-friendly platforms
             </p>
           </div>
 
@@ -156,7 +154,9 @@ const Index = () => {
                   Expanding Into
                 </h3>
                 <p className="text-muted-foreground mb-6">
-                  Continuing to grow in platform engineering, cloud architecture, security, and backend-focused software development
+                  Continuing to grow in platform engineering, cloud
+                  architecture, security, and backend-focused software
+                  development
                 </p>
                 <div className="space-y-2">
                   {targetRoles.map((role) => (
@@ -195,7 +195,8 @@ const Index = () => {
             Featured Projects
           </h2>
           <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Cloud infrastructure automation, developer tooling, and engineering solutions across software and platform systems
+            Cloud infrastructure automation, developer tooling, and engineering
+            solutions across software and platform systems
           </p>
           <Button asChild size="lg">
             <Link to="/projects">Explore Projects</Link>
@@ -210,18 +211,24 @@ const Index = () => {
             Latest Insights
           </h2>
           <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Articles on software engineering, cloud architecture, platform automation, and DevOps best practices
+            Articles on software engineering, cloud architecture, platform
+            automation, and DevOps best practices
           </p>
-          <Button asChild size="lg" variant="outline">
-            <a
-              href="https://thisiskushal31.github.io/blog"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center"
-            >
-              Read Blog <ExternalLink className="ml-2 h-4 w-4" />
-            </a>
-          </Button>
+          <div className="flex items-center justify-center gap-2">
+            <Button asChild size="lg" variant="outline">
+              <a
+                href="https://thisiskushal31.github.io/blog"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center"
+              >
+                Read Blog <ExternalLink className="ml-2 h-4 w-4" />
+              </a>
+            </Button>
+            {/* REMOVE THIS LINE TO REMOVE IN PROGRESS BADGE */}
+            <Badge variant="secondary" className="text-xs px-2 py-1">Under Construction</Badge>
+            {/* END IN PROGRESS BADGE */}
+          </div>
         </div>
       </section>
 
@@ -240,7 +247,7 @@ const Index = () => {
               style={{ animationDelay: "0.1s" }}
             >
               <div className="text-3xl md:text-4xl font-bold text-syntax-green mb-2">
-                3+
+                4+
               </div>
               <div className="text-sm text-muted-foreground">
                 Projects Deployed
@@ -279,7 +286,10 @@ const Index = () => {
             Ready to Collaborate?
           </h2>
           <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            I’m always open to connecting on software engineering, platform engineering, cloud infrastructure, or DevOps projects—whether it’s about sharing ideas, solving challenges, or building something impactful together
+            I'm always open to connecting on software engineering, platform
+            engineering, cloud infrastructure, or DevOps projects—whether it's
+            about sharing ideas, solving challenges, or building something
+            impactful together
           </p>
           <Button asChild size="lg" className="text-lg px-8">
             <Link to="/contact">Get In Touch</Link>

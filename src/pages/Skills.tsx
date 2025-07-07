@@ -1,15 +1,17 @@
-
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Badge } from '@/components/ui/badge';
-import LinkableHeading from '@/components/LinkableHeading';
-import { portfolioConfig } from '@/config/portfolio';
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import LinkableHeading from "@/components/LinkableHeading";
+import { portfolioConfig } from "@/config/portfolio";
 
 const Skills = () => {
   const certifications = [
-    'AWS Certified Solutions Architect',
-    'Kubernetes Administrator (CKA)',
-    'Docker Certified Associate',
-    'HashiCorp Terraform Associate'
+    // Certifications Earned
+    "Google Cloud Associate Cloud Engineer",
+
+    // Relevant Advanced Courses Completed
+    "Architecting with Google Kubernetes Engine: Foundations",
+    "Architecting with Google Compute Engine Specialization",
+    "Elastic Google Cloud Infrastructure: Scaling and Automation",
   ];
 
   return (
@@ -17,18 +19,27 @@ const Skills = () => {
       <div className="container mx-auto">
         {/* Header */}
         <div className="text-center mb-16">
-          <LinkableHeading level={1} id="technical-skills" className="text-4xl md:text-5xl font-bold mb-4">
+          <LinkableHeading
+            level={1}
+            id="technical-skills"
+            className="text-4xl md:text-5xl font-bold mb-4"
+          >
             Technical Skills
           </LinkableHeading>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            A comprehensive overview of my technical expertise across DevOps, Cloud, and Security domains
+            Exploring the full spectrum of Software Engineering—from Cloud and
+            DevOps to Security and beyond.
           </p>
         </div>
 
         {/* Skills Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
           {portfolioConfig.skills.categories.map((category, index) => (
-            <Card key={category.title} className="card-hover animate-fade-in" style={{ animationDelay: `${index * 0.1}s` }}>
+            <Card
+              key={category.title}
+              className="card-hover animate-fade-in"
+              style={{ animationDelay: `${index * 0.1}s` }}
+            >
               <CardHeader>
                 <CardTitle className="flex items-center space-x-2">
                   <span className="text-2xl">{category.icon}</span>
@@ -38,7 +49,11 @@ const Skills = () => {
               <CardContent>
                 <div className="flex flex-wrap gap-2">
                   {category.skills.map((skill) => (
-                    <Badge key={skill} variant="secondary" className="tech-badge">
+                    <Badge
+                      key={skill}
+                      variant="secondary"
+                      className="tech-badge"
+                    >
                       {skill}
                     </Badge>
                   ))}
@@ -50,7 +65,11 @@ const Skills = () => {
 
         {/* Certifications */}
         <div className="text-center mb-16">
-          <LinkableHeading level={2} id="certifications" className="text-3xl font-bold mb-8">
+          <LinkableHeading
+            level={2}
+            id="certifications"
+            className="text-3xl font-bold mb-8"
+          >
             Certifications & Training
           </LinkableHeading>
           <div className="flex flex-wrap justify-center gap-4">
@@ -64,28 +83,49 @@ const Skills = () => {
 
         {/* Learning Path */}
         <div>
-          <LinkableHeading level={2} id="learning-path" className="text-3xl font-bold text-center mb-8">
+          <LinkableHeading
+            level={2}
+            id="learning-path"
+            className="text-3xl font-bold text-center mb-8"
+          >
             Current Learning Path
           </LinkableHeading>
           <Card>
             <CardContent className="pt-8">
-              <div className="grid md:grid-cols-3 gap-6 text-center">
+              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 text-center">
                 <div>
-                  <h3 className="font-semibold text-syntax-blue mb-2">Security Focus</h3>
+                  <h3 className="font-semibold text-syntax-blue mb-2">
+                    Cloud-Native Security
+                  </h3>
                   <p className="text-sm text-muted-foreground">
-                    DevSecOps practices, SAST/DAST tools, Security automation
+                    DevSecOps, Secrets Management, SAST/DAST, Cloud Security
+                    Tools
                   </p>
                 </div>
                 <div>
-                  <h3 className="font-semibold text-syntax-green mb-2">Platform Engineering</h3>
+                  <h3 className="font-semibold text-syntax-green mb-2">
+                    Platform Engineering
+                  </h3>
                   <p className="text-sm text-muted-foreground">
-                    Internal developer platforms, Service mesh, GitOps
+                    Internal Developer Platforms, GitOps Workflows, Service Mesh
                   </p>
                 </div>
                 <div>
-                  <h3 className="font-semibold text-syntax-purple mb-2">Site Reliability</h3>
+                  <h3 className="font-semibold text-syntax-purple mb-2">
+                    Infrastructure Observability
+                  </h3>
                   <p className="text-sm text-muted-foreground">
-                    SLI/SLO/SLA, Chaos engineering, Incident response
+                    Advanced Monitoring, OpenTelemetry, Tracing, Chaos
+                    Engineering
+                  </p>
+                </div>
+                <div>
+                  <h3 className="font-semibold text-syntax-orange mb-2">
+                    Serverless & Event-Driven
+                  </h3>
+                  <p className="text-sm text-muted-foreground">
+                    Cloud Run, AWS Lambda, Event-Driven Patterns, Workflow
+                    Automation
                   </p>
                 </div>
               </div>
