@@ -101,7 +101,7 @@ export const portfolioConfig = {
   projects: [
     {
       title: 'Infra Provision System Automation',
-      description: 'Automated infrastructure provisioning, backups, and role management to reduce manual effort, improve reliability, and accelerate cloud operations.',
+      description: 'Automated infrastructure provisioning, backups, and role management to reduce manual effort, improve reliability, and accelerate cloud operations at purplle.com.',
       technologies: ['Terraform', 'Python', 'Bash', 'GitLab CI', 'Jenkins', 'GCP'],
       features: [
         'Automated IAM role management using Python and CI/CD pipelines, reducing role misconfigurations and manual overhead.',
@@ -115,7 +115,7 @@ export const portfolioConfig = {
     },
     {
       title: 'Nexus - Internal Inhouse POS Application',
-      description: 'Deployed and optimized resilient infrastructure for Nexus, an internal POS system, ensuring high availability and robust monitoring for retail operations.',
+      description: 'Deployed and optimized resilient infrastructure for Nexus, an internal POS system, ensuring high availability and robust monitoring for retail operations at purplle.com.',
       technologies: ['GCP', 'Grafana', 'Prometheus', 'Python', 'WAF', 'Terraform'],
       features: [
         'Designed and deployed high-availability infrastructure using Terraform and GCP services, ensuring uninterrupted retail operations.',
@@ -129,7 +129,7 @@ export const portfolioConfig = {
     },
     {
       title: 'Monitoring & Alerting Automation',
-      description: 'Automated infrastructure monitoring and alerting to improve incident response, reduce downtime, and proactively detect issues.',
+      description: 'Automated infrastructure monitoring and alerting to improve incident response, reduce downtime, and proactively detect issues at purplle.com.',
       technologies: ['Grafana', 'Prometheus', 'Python', 'GCP'],
       features: [
         'Migrated 100% of legacy alerting systems to Grafana Alerts, enabling unified monitoring across all infrastructure components.',
@@ -143,7 +143,7 @@ export const portfolioConfig = {
     },
     {
       title: 'Cloud Infrastructure Security Enhancements',
-      description: 'Strengthened cloud infrastructure security by automating key security controls, minimizing risks, and reducing attack surface.',
+      description: 'Strengthened cloud infrastructure security by automating key security controls, minimizing risks, and reducing attack surface at purplle.com.',
       technologies: ['GCP', 'Python', 'Terraform', 'Kubernetes', 'Secrets Manager'],
       features: [
         'Automated IAM role minimization and unused service account cleanup, reducing unauthorized access risks.',
