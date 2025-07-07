@@ -53,7 +53,6 @@ export const portfolioConfig = {
           "React.js",
           "Node.js",
           "Express.js",
-          "Spring Boot",
           "REST APIs",
           "Microservices",
           "Cloud-Native Applications"
