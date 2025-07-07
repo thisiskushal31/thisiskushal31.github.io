@@ -43,8 +43,7 @@ export const portfolioConfig = {
           "Python", 
           "C/C++", 
           "JavaScript", 
-          "Bash/Shell", 
-          "Java"
+          "Bash/Shell"
         ]
       },
       {

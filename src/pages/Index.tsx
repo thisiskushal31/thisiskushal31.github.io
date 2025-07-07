@@ -19,16 +19,14 @@ const Index = () => {
     "Cloud Infrastructure",
     "Infrastructure as Code (IaC)",
     "CI/CD",
-    "Software Programming"
+    "Software Programming",
   ];
 
   const targetRoles = [
-    "DevSecOps Engineer",
-    "DevOps Engineer",
     "Software Engineer",
-    "SRE",
-    "Cloud Engineer",
     "Platform Engineer",
+    "Cloud Engineer",
+    "DevOps Engineer",
     "Security Engineer",
   ];
 
@@ -119,14 +117,16 @@ const Index = () => {
 
           <div
             className="grid gap-4 max-w-4xl mx-auto"
-            style={{ gridTemplateColumns: "repeat(auto-fit, minmax(180px, 1fr))" }}
+            style={{
+              gridTemplateColumns: "repeat(auto-fit, minmax(180px, 1fr))",
+            }}
           >
             {currentSkills.map((skill) => (
               <div
                 key={skill}
-                className="text-center p-4 rounded-lg border bg-card hover:shadow-md transition-shadow min-w-[180px]"
+                className="flex flex-col items-center justify-center text-center p-4 rounded-lg border bg-card hover:shadow-md transition-shadow min-w-[180px] h-full"
               >
-                <span className="text-sm font-medium">{skill}</span>
+                <span className="text-sm font-medium break-words">{skill}</span>
               </div>
             ))}
           </div>
@@ -154,9 +154,7 @@ const Index = () => {
                   Expanding Into
                 </h3>
                 <p className="text-muted-foreground mb-6">
-                  Continuing to grow in platform engineering, cloud
-                  architecture, security, and backend-focused software
-                  development
+                  Continuing to grow across platform engineering, cloud architecture, backend software development, and security-focused infrastructure.
                 </p>
                 <div className="space-y-2">
                   {targetRoles.map((role) => (
@@ -176,8 +174,7 @@ const Index = () => {
                   Experience
                 </h3>
                 <p className="text-muted-foreground mb-6">
-                  2+ years building and scaling cloud infrastructure for
-                  enterprise clients
+                  2+ years building cloud systems, automation, and backend platforms for scalable, modern applications.
                 </p>
                 <Button asChild className="w-full">
                   <Link to="/experience">View Experience</Link>
@@ -226,7 +223,9 @@ const Index = () => {
               </a>
             </Button>
             {/* REMOVE THIS LINE TO REMOVE IN PROGRESS BADGE */}
-            <Badge variant="secondary" className="text-xs px-2 py-1">Under Construction</Badge>
+            <Badge variant="secondary" className="text-xs px-2 py-1">
+              Under Construction
+            </Badge>
             {/* END IN PROGRESS BADGE */}
           </div>
         </div>
