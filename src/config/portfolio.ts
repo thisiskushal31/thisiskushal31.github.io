@@ -16,7 +16,10 @@ export const portfolioConfig = {
       {
         title: "Cloud Platforms",
         icon: "☁️",
-        skills: ["Google Cloud Platform (GCP)", "Amazon Web Services (AWS)"]
+        skills: [
+          "Google Cloud Platform (GCP)", 
+          "Amazon Web Services (AWS)"
+        ]
       },
       {
         title: "DevOps & Automation",
@@ -71,7 +74,12 @@ export const portfolioConfig = {
       {
         title: "Databases & Messaging",
         icon: "🗄️",
-        skills: ["MySQL", "MongoDB", "Redis", "Elasticsearch"]
+        skills: [
+          "MySQL", 
+          "MongoDB", 
+          "Redis", 
+          "Elasticsearch"
+        ]
       },
       {
         title: "Computer Science Fundamentals",
