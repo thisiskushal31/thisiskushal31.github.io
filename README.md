@@ -1,73 +1,104 @@
-# Welcome to your Lovable project
+# Personal Portfolio Website
 
-## Project info
+This repository contains the source code for my personal portfolio website, which showcases my professional experience, skills, projects, and achievements.
 
-**URL**: https://lovable.dev/projects/bf5ffca8-1920-412d-8421-601a5e8ac893
+> **Info:** A public, general-use version of this repository will be available later for open source contribution.
 
-## How can I edit this code?
+---
 
-There are several ways of editing your application.
+## 📝 How to Update Personal Information
 
-**Use Lovable**
+### 1. **Edit Personal Details**
+   * Open `src/config/portfolio.ts` and update the `personal` section:
+   ```typescript
+   personal: {
+     name: "Kushal Gupta",
+     initials: "KG",
+     title: "Software Engineer",
+     subtitle: "Platform Engineering · DevOps · Cloud Infrastructure",
+     description: "Your professional description",
+     location: "Mumbai, India",
+     timezone: "IST (UTC+5:30)",
+     email: "guptakushal070@gmail.com"
+   }
+   ```
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/bf5ffca8-1920-412d-8421-601a5e8ac893) and start prompting.
+### 2. **Update Skills**
+   * Modify the `skills.categories` array in `src/config/portfolio.ts`
+   * Add/remove skill categories and individual skills
+   * Use emoji icons for each category
 
-Changes made via Lovable will be committed automatically to this repo.
+### 3. **Add/Edit Projects**
+   * Update the `projects` array in `src/config/portfolio.ts`
+   * Include project title, description, technologies, features, and links
+   * Set project status: "Production", "Development", or "Archived"
 
-**Use your preferred IDE**
+### 4. **Update Quick Actions**
+   * Modify the `quickActions` array for direct links
+   * Use Lucide icon names for icons
+   * Include social profiles, contact methods, and important links
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### 5. **Edit Experience**
+   * Open `src/pages/Experience.tsx`
+   * Update the `experiences` array with job history
+   * Include achievements, technologies used, and company details
+   * Update the `education` array with academic background
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### 6. **Customize Social Links**
+   * Update the `socialLinks` array in `src/config/portfolio.ts`
+   * Add LinkedIn, GitHub, and other professional profiles
 
-Follow these steps:
+---
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## 🚀 Development Commands
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+```bash
+npm run dev          # Start development server
+npm run build        # Build for production
+npm run preview      # Preview production build
+npm run lint         # Run ESLint
 ```
 
-**Edit a file directly in GitHub**
+---
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## 🎨 Customization Notes
 
-**Use GitHub Codespaces**
+- **Colors**: Edit `tailwind.config.ts` for theme customization
+- **Fonts**: Change fonts in `tailwind.config.ts` under `fontFamily`
+- **Animations**: Custom animations defined in `tailwind.config.ts`
+- **Icons**: Use Lucide React icons from [lucide.dev](https://lucide.dev)
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+---
 
-## What technologies are used for this project?
+## 📱 Pages Structure
 
-This project is built with:
+- **Home** (`/`): Hero section, quick actions, skills overview
+- **Skills** (`/skills`): Detailed skills categorization
+- **Experience** (`/experience`): Professional timeline and education
+- **Projects** (`/projects`): Project showcase with details
+- **Contact** (`/contact`): Contact form and direct links
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+---
 
-## How can I deploy this project?
+## 🔧 Technical Stack
 
-Simply open [Lovable](https://lovable.dev/projects/bf5ffca8-1920-412d-8421-601a5e8ac893) and click on Share -> Publish.
+- React 18 + TypeScript
+- Vite for build tooling
+- Tailwind CSS for styling
+- shadcn/ui components
+- React Router DOM with hash routing
+- Dark/light theme support
 
-## Can I connect a custom domain to my Lovable project?
+---
 
-Yes, you can!
+## Copyright and Licensing
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+© 2025 Kushal Gupta. All Rights Reserved.
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+The source code and all content within this repository are the exclusive property of Kushal Gupta. This content is not to be used, reproduced, or distributed without explicit permission.
+
+## About
+
+A private repository containing the website code for my personal portfolio. All code is for my exclusive use and is not licensed for public distribution.
+
+**Live Site**: [https://thisiskushal31.github.io/](https://thisiskushal31.github.io/)
