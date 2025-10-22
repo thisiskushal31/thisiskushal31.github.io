@@ -223,9 +223,9 @@ const Index = () => {
               </a>
             </Button>
             {/* REMOVE THIS LINE TO REMOVE IN PROGRESS BADGE */}
-            <Badge variant="secondary" className="text-xs px-2 py-1">
+            {/* <Badge variant="secondary" className="text-xs px-2 py-1">
               Under Construction
-            </Badge>
+            </Badge> */}
             {/* END IN PROGRESS BADGE */}
           </div>
         </div>
