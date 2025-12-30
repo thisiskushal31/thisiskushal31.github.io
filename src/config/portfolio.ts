@@ -14,83 +14,82 @@ export const portfolioConfig = {
   skills: {
     categories: [
       {
-        title: "Cloud Platforms",
-        icon: "☁️",
-        skills: [
-          "Google Cloud Platform (GCP)", 
-          "Amazon Web Services (AWS)"
-        ]
-      },
-      {
-        title: "DevOps & Automation",
-        icon: "🔧",
-        skills: [
-          "Terraform",
-          "Docker",
-          "Kubernetes",
-          "GitOps",
-          "Helm",
-          "ArgoCD",
-          "GitHub Actions",
-          "Jenkins",
-          "GitLab CI"
-        ]
-      },
-      {
-        title: "Programming & Scripting",
+        title: "Languages & Scripting",
         icon: "💻",
         skills: [
-          "Python", 
-          "C/C++", 
-          "JavaScript", 
-          "Bash/Shell"
+          "Python",
+          "Bash/Shell",
+          "JavaScript",
+          "C/C++"
         ]
       },
       {
-        title: "Software Development",
-        icon: "🖥️",
+        title: "Cloud & Infrastructure",
+        icon: "☁️",
         skills: [
-          "React.js",
-          "Node.js",
-          "Express.js",
-          "REST APIs",
-          "Microservices",
-          "Cloud-Native Applications"
+          "Google Cloud Platform (GCP)",
+          "Amazon Web Services (AWS)",
+          "Google Kubernetes Engine (GKE)",
+          "GCR",
+          "GCS",
+          "Compute Engine",
+          "Cloud SQL",
+          "Load Balancer",
+          "VPC",
+          "WAF",
+          "Docker",
+          "Kubernetes"
         ]
       },
       {
-        title: "Security & Monitoring",
-        icon: "🔒",
+        title: "CI/CD & Automation",
+        icon: "🔧",
+        skills: [
+          "Git",
+          "Jenkins",
+          "GitLab CI",
+          "GitHub CI",
+          "GitOps workflows",
+          "n8n",
+          "Ansible",
+          "Terraform"
+        ]
+      },
+      {
+        title: "Monitoring, Databases & Messaging",
+        icon: "📊",
         skills: [
           "Prometheus",
           "Grafana",
-          "Secrets Management",
-          "IAM & Security Policies",
-          "Cloud Infrastructure Security Practices"
+          "MySQL",
+          "MongoDB",
+          "Elasticsearch",
+          "Redis",
+          "Kafka"
         ]
       },
       {
-        title: "Databases & Messaging",
-        icon: "🗄️",
+        title: "Security & Operations",
+        icon: "🔒",
         skills: [
-          "MySQL", 
-          "MongoDB", 
-          "Redis", 
-          "Elasticsearch"
+          "Secrets Manager",
+          "SSO",
+          "IAM",
+          "Zero-Trust Architecture",
+          "Defense-in-Depth",
+          "Trivy",
+          "Incident Response"
         ]
       },
       {
-        title: "Computer Science Fundamentals",
+        title: "Fundamentals",
         icon: "📚",
         skills: [
           "Data Structures",
           "Algorithms",
           "System Design",
           "Networking",
-          "Operating Systems",
-          "Object-Oriented Programming (OOP)",
-          "Concurrency",
-          "Scalability"
+          "Operating Systems"
         ]
       }
     ]
