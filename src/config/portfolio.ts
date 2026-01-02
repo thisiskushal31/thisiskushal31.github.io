@@ -99,7 +99,7 @@ export const portfolioConfig = {
     {
       title: 'Grid Platform - Infrastructure Management Platform',
       company: 'Personal Project',
-      description: 'AI-first Infrastructure management tool that helps you build infrastructure in few clicks.',
+      description: 'Open-source, AI-first Infrastructure management tool that helps you build infrastructure in few clicks.',
       technologies: ['Node.js', 'TypeScript', 'React', 'Terraform', 'OpenTofu', 'Ansible', 'Kubernetes', 'Docker', 'GitOps'],
       features: [
         'Reduce infrastructure setup time from days to minutes with AI-powered automation and intuitive interface.',
@@ -118,15 +118,14 @@ export const portfolioConfig = {
     {
       title: 'Infrastructure Monitoring & Observability',
       company: 'Purplle.com',
-      description: 'Architected unified observability stack with Prometheus and Grafana, achieving 76% MTTR reduction (30min → 7min) across 125+ Kubernetes deployments and 300+ compute instances.',
+      description: 'Unified observability stack with Prometheus and Grafana, achieving 76% MTTR reduction (30min → 7min) across 125+ Kubernetes deployments and 300+ compute instances.',
       technologies: ['Prometheus', 'Grafana', 'GCP Stackdriver', 'Jenkins', 'Slack', 'Python'],
       features: [
-        'Unified observability stack with real-time monitoring and automated escalation across multi-environment setups (DEV, SIT, UAT, PROD).',
         '76% MTTR reduction (30 minutes → 7 minutes) through automated alerting and incident response workflows.',
+        'Real-time monitoring and automated escalation across multi-environment setups (DEV, SIT, UAT, PROD).',
         'Comprehensive monitoring coverage for 125+ Kubernetes deployments and 300+ compute instances with proactive dashboards.',
-        'CI/CD integration with Jenkins and Slack for real-time job failure alerts and automated escalation policies.',
-        'Custom Prometheus exporters and Grafana dashboards for application metrics, infrastructure health, and business KPIs.',
-        'Automated alert routing and on-call management with escalation policies for critical infrastructure components.'
+        'CI/CD integration with Jenkins and Slack for real-time job failure alerts and automated escalation.',
+        'Prometheus exporters and Grafana dashboards for application metrics, infrastructure health, and business KPIs.'
       ],
       links: {
         demo: 'https://github.com/thisiskushal31/thisiskushal31/tree/main/projects/1_PurplleInfra_Monitoring_Improvement'
