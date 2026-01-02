@@ -97,16 +97,16 @@ export const portfolioConfig = {
 
   projects: [
     {
-      title: 'Grid Platform - Infrastructure Orchestration Platform',
-      description: 'Open-source, self-hosted Infrastructure Orchestration Platform that generates standard IaC files (OpenTofu/Terraform, Ansible, Kubernetes) from JSON configs and orchestrates deployments. Solving the problem of expensive, vendor-locked infrastructure management tools.',
+      title: 'Grid Platform - Infrastructure Management Platform',
+      company: 'Personal Project',
+      description: 'AI-first Infrastructure management tool that helps you build infrastructure in few clicks.',
       technologies: ['Node.js', 'TypeScript', 'React', 'Terraform', 'OpenTofu', 'Ansible', 'Kubernetes', 'Docker', 'GitOps'],
       features: [
-        'Self-hosted management tool that generates standard OpenTofu/Terraform, Ansible, and Kubernetes files from JSON configurations.',
-        'CLI-first approach with commands: `grid generate`, `grid deploy`, `grid validate`, and `grid status` for infrastructure orchestration.',
-        'Zero vendor lock-in - all generated files work independently, can use standard tools (Terraform, Ansible, K8s) without Grid.',
-        'Multi-repository architecture: grid-cli (CLI tool), grid-core (backend API), grid-ui (frontend), grid-terraform (modules), grid-docs (documentation).',
-        'Kubernetes-native architecture with support for VM and local deployments for POC/development.',
-        'GitOps-first design built for modern DevOps workflows with standard tool integration.'
+        'Reduce infrastructure setup time from days to minutes with AI-powered automation and intuitive interface.',
+        'Eliminate vendor lock-in and reduce infrastructure management costs by 60-80% compared to proprietary solutions.',
+        'Accelerate time-to-market for new projects with standardized, repeatable infrastructure deployment workflows.',
+        'Minimize human errors and infrastructure drift through automated validation and consistent configurations.',
+        'Scale infrastructure operations without scaling team size, enabling faster business growth.'
       ],
       links: {
         github: 'https://github.com/gridplatform',
@@ -117,13 +117,16 @@ export const portfolioConfig = {
     },
     {
       title: 'Infrastructure Monitoring & Observability',
+      company: 'Purplle.com',
       description: 'Architected unified observability stack with Prometheus and Grafana, achieving 76% MTTR reduction (30min → 7min) across 125+ Kubernetes deployments and 300+ compute instances.',
       technologies: ['Prometheus', 'Grafana', 'GCP Stackdriver', 'Jenkins', 'Slack', 'Python'],
       features: [
         'Unified observability stack with real-time monitoring and automated escalation across multi-environment setups (DEV, SIT, UAT, PROD).',
         '76% MTTR reduction (30 minutes → 7 minutes) through automated alerting and incident response workflows.',
         'Comprehensive monitoring coverage for 125+ Kubernetes deployments and 300+ compute instances with proactive dashboards.',
-        'CI/CD integration with Jenkins and Slack for real-time job failure alerts and automated escalation policies.'
+        'CI/CD integration with Jenkins and Slack for real-time job failure alerts and automated escalation policies.',
+        'Custom Prometheus exporters and Grafana dashboards for application metrics, infrastructure health, and business KPIs.',
+        'Automated alert routing and on-call management with escalation policies for critical infrastructure components.'
       ],
       links: {
         demo: 'https://github.com/thisiskushal31/thisiskushal31/tree/main/projects/1_PurplleInfra_Monitoring_Improvement'
@@ -132,7 +135,8 @@ export const portfolioConfig = {
       category: 'Platform Engineering'
     },
     {
-      title: 'E-Commerce Platform Infrastructure (Purplle.com)',
+      title: 'E-Commerce Platform Infrastructure',
+      company: 'Purplle.com',
       description: 'Managed and maintained main e-commerce platform infrastructure serving 7M total users with 4x traffic spike handling, supporting ₹700+ Crore annual revenue with 99%+ uptime.',
       technologies: ['Kubernetes', 'GKE', 'MySQL', 'Elasticsearch', 'MongoDB', 'Redis', 'Terraform', 'gh-ost'],
       features: [
@@ -150,13 +154,16 @@ export const portfolioConfig = {
     },
     {
       title: 'POS Platform Deployment (Nexus)',
+      company: 'Purplle.com',
       description: 'Deployed high-availability POS platform for 100+ retail stores with 99%+ uptime, supporting 500+ daily employees and 40+ Crores revenue.',
       technologies: ['Kubernetes', 'GKE', 'Kafka', 'Redis', 'Terraform', 'Jenkins', 'GCP'],
       features: [
         'High-availability deployment across DEV, SIT, UAT, PROD environments with auto-scaling (1-6 pods).',
         'Kafka + Redis architecture for real-time data processing and caching, ensuring 99%+ uptime.',
         'Multi-environment support with consistent deployments and automated provisioning via Terraform.',
-        'Successfully handling 100+ retail stores with 500+ daily employees, supporting 40+ Crores revenue.'
+        'Successfully handling 100+ retail stores with 500+ daily employees, supporting 40+ Crores revenue.',
+        'Container-native architecture with health checks, liveness probes, and readiness probes for reliable service delivery.',
+        'CI/CD pipeline integration with Jenkins for automated testing, building, and deployment across all environments.'
       ],
       links: {
         demo: 'https://github.com/thisiskushal31/thisiskushal31/tree/main/projects/3_Nexus.purplle.com_Deployment'
@@ -166,6 +173,7 @@ export const portfolioConfig = {
     },
     {
       title: 'Security Hardening & Zero-Trust Architecture',
+      company: 'Purplle.com',
       description: 'Comprehensive security improvements implementing zero-trust architecture, Kubernetes RBAC, automated IAM minimization, and defense-in-depth across 125+ Kubernetes deployments.',
       technologies: ['Kubernetes', 'RBAC', 'GCP', 'Python', 'Terraform', 'Trivy', 'Secrets Manager', 'SSO'],
       features: [
@@ -183,6 +191,7 @@ export const portfolioConfig = {
     },
     {
       title: 'Infrastructure Automation & IAC Deployment',
+      company: 'Purplle.com',
       description: 'Infrastructure as Code initiative using Terraform and Ansible, achieving 40%+ faster deployments and automating 40%+ of provisioning tasks across multi-environment setups.',
       technologies: ['Terraform', 'Ansible', 'Jenkins', 'GitLab CI', 'GitOps', 'Python', 'Bash'],
       features: [
@@ -190,7 +199,8 @@ export const portfolioConfig = {
         '40%+ faster deployments through IAC automation and CI/CD modernization with GitOps workflows.',
         'Multi-environment consistency (DEV, SIT, UAT, PROD) with automated provisioning and configuration management via Ansible.',
         'CI/CD modernization: Migrated Jenkins from freestyle bash jobs to scripted pipeline jobs with Slack integration.',
-        'Automated backup systems for MySQL, MongoDB, Elasticsearch using Python/Bash with cron scheduling.'
+        'Automated backup systems for MySQL, MongoDB, Elasticsearch using Python/Bash with cron scheduling.',
+        'State management and version control for infrastructure changes with Terraform state locking and remote backends.'
       ],
       links: {
         demo: 'https://github.com/thisiskushal31/thisiskushal31/tree/main/projects/5_Purplle.com_IAC_Deployment'
@@ -200,14 +210,16 @@ export const portfolioConfig = {
     },
     {
       title: 'AdTech Platform (PurplleAds)',
+      company: 'Purplle.com',
       description: 'Deployed in-house AdTech platform supporting ₹400+ Crore brand advertising revenue with 93% cost reduction (₹80 Lakh → ₹5.7 Lakh), handling 4x traffic spikes during major sales.',
       technologies: ['Kubernetes', 'GKE', 'Terraform', 'GitLab CI', 'Keycloak', 'GCP', 'AWS', 'Route53'],
       features: [
         '100+ Kubernetes deployments on GKE with multi-cloud architecture (AWS + GCP) for high availability.',
-        '93% cost optimization (₹80 Lakh → ₹5.7 Lakh) through infrastructure rightsizing and automation.',
+        '93% cost optimization (₹80 Lakh → ₹5.7 Lakh) by deploying inhouse solutions.',
         'Keycloak authentication integration for secure access management across the platform.',
         '4x traffic spike handling during major sales events, supporting 7M total users with 150K DAU (600K during major sales).',
-        'Multi-cloud deployment with Route53, GKE, and container-native load balancing for resilience.'
+        'Multi-cloud deployment with Route53, GKE, and container-native load balancing for resilience.',
+        'Real-time ad serving infrastructure with low-latency response times and high-throughput processing capabilities.'
       ],
       links: {
         demo: 'https://github.com/thisiskushal31/thisiskushal31/tree/main/projects/6_Adtech.purplle.com_Deployment'

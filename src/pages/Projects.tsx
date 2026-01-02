@@ -59,19 +59,26 @@ const Projects = () => {
         {/* Projects Grid */}
         <div className="grid md:grid-cols-2 gap-8">
           {filteredProjects.map((project, index) => (
-            <Card key={project.title} className="card-hover animate-fade-in" style={{ animationDelay: `${index * 0.1}s` }}>
-              <CardHeader>
-                <div className="flex justify-between items-start">
-                  <CardTitle className="text-xl mb-2">{project.title}</CardTitle>
+            <Card key={project.title} className="card-hover animate-fade-in flex flex-col h-full" style={{ animationDelay: `${index * 0.1}s` }}>
+              <CardHeader className="flex-shrink-0">
+                <div className="flex justify-between items-start mb-2">
+                  <CardTitle className="text-xl">{project.title}</CardTitle>
                   <Badge className={getStatusColor(project.status)}>
                     {project.status}
                   </Badge>
                 </div>
+                {project.company && (
+                  <div className="mb-2">
+                    <Badge variant="outline" className="text-xs font-medium">
+                      {project.company}
+                    </Badge>
+                  </div>
+                )}
                 <p className="text-muted-foreground">{project.description}</p>
               </CardHeader>
-              <CardContent>
+              <CardContent className="flex-grow flex flex-col">
                 {/* Features */}
-                <div className="mb-6">
+                <div className="mb-6 flex-grow">
                   <h4 className="font-semibold mb-3">Key Features:</h4>
                   <ul className="space-y-1">
                     {project.features.map((feature, i) => (
@@ -84,7 +91,7 @@ const Projects = () => {
                 </div>
 
                 {/* Technologies */}
-                <div className="mb-6">
+                <div className="mb-6 flex-shrink-0">
                   <h4 className="font-semibold mb-3">Technologies:</h4>
                   <div className="flex flex-wrap gap-2">
                     {project.technologies.map((tech) => (
@@ -96,7 +103,7 @@ const Projects = () => {
                 </div>
 
                 {/* Links */}
-                <div className="flex space-x-2">
+                <div className="flex space-x-2 flex-shrink-0 mt-auto">
                   {project.links?.github && (
                     <Button variant="outline" size="sm" asChild>
                       <a href={project.links.github} target="_blank" rel="noopener noreferrer">
