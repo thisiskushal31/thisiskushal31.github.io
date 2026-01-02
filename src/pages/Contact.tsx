@@ -203,12 +203,9 @@ const Contact = () => {
               Response Time
             </LinkableHeading>
             <p className="text-muted-foreground mb-4">
-              I typically respond to emails within <strong>24 hours</strong>{" "}
-              during business days. For urgent matters, please mention "URGENT"
-              in your subject line.
-            </p>
-            <p className="text-sm text-muted-foreground">
-              Best time to reach me: 10 AM - 5 PM IST(UTC+5:30), Monday - Friday
+              I'm available most of the time, but the best time to reach me is{" "}
+              <strong>10 AM - 5 PM IST (UTC+5:30), Monday - Friday</strong>. For
+              urgent matters, please mention "URGENT" in your subject line.
             </p>
           </CardContent>
         </Card>

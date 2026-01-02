@@ -174,7 +174,7 @@ const Index = () => {
                   Experience
                 </h3>
                 <p className="text-muted-foreground mb-6">
-                  2+ years building cloud systems, automation, and backend platforms for scalable, modern applications.
+                  3+ years building cloud systems, automation, and backend platforms for scalable, modern applications.
                 </p>
                 <Button asChild className="w-full">
                   <Link to="/experience">View Experience</Link>
@@ -237,7 +237,7 @@ const Index = () => {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div className="animate-slide-in">
               <div className="text-3xl md:text-4xl font-bold text-primary mb-2">
-                2+
+                3+
               </div>
               <div className="text-sm text-muted-foreground">Years</div>
             </div>
@@ -246,7 +246,7 @@ const Index = () => {
               style={{ animationDelay: "0.1s" }}
             >
               <div className="text-3xl md:text-4xl font-bold text-syntax-green mb-2">
-                4+
+                6+
               </div>
               <div className="text-sm text-muted-foreground">
                 Projects Deployed
@@ -257,7 +257,7 @@ const Index = () => {
               style={{ animationDelay: "0.2s" }}
             >
               <div className="text-3xl md:text-4xl font-bold text-syntax-orange mb-2">
-                99.9%
+                99%+
               </div>
               <div className="text-sm text-muted-foreground">
                 Uptime Achieved
