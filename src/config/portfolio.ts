@@ -97,61 +97,123 @@ export const portfolioConfig = {
 
   projects: [
     {
-      title: 'Infra Provision System Automation',
-      description: 'Automated infrastructure provisioning, backups, and role management to reduce manual effort, improve reliability, and accelerate cloud operations at purplle.com.',
-      technologies: ['Terraform', 'Python', 'Bash', 'GitLab CI', 'Jenkins', 'GCP'],
+      title: 'Grid Platform - Infrastructure Orchestration Platform',
+      description: 'Open-source, self-hosted Infrastructure Orchestration Platform that generates standard IaC files (OpenTofu/Terraform, Ansible, Kubernetes) from JSON configs and orchestrates deployments. Solving the problem of expensive, vendor-locked infrastructure management tools.',
+      technologies: ['Node.js', 'TypeScript', 'React', 'Terraform', 'OpenTofu', 'Ansible', 'Kubernetes', 'Docker', 'GitOps'],
       features: [
-        'Automated IAM role management using Python and CI/CD pipelines, reducing role misconfigurations and manual overhead.',
-        'Developed backup automation for MySQL, MongoDB, Elasticsearch, and GCP VMs using Python, Bash, and cron, improving data resilience.',
-        'Provisioned infrastructure using Terraform and GitOps workflows, reducing deployment time by 50% and improving environment consistency.',
-        'Enabled scheduled automated backups, ensuring reliable disaster recovery processes and compliance with backup policies.'
+        'Self-hosted management tool that generates standard OpenTofu/Terraform, Ansible, and Kubernetes files from JSON configurations.',
+        'CLI-first approach with commands: `grid generate`, `grid deploy`, `grid validate`, and `grid status` for infrastructure orchestration.',
+        'Zero vendor lock-in - all generated files work independently, can use standard tools (Terraform, Ansible, K8s) without Grid.',
+        'Multi-repository architecture: grid-cli (CLI tool), grid-core (backend API), grid-ui (frontend), grid-terraform (modules), grid-docs (documentation).',
+        'Kubernetes-native architecture with support for VM and local deployments for POC/development.',
+        'GitOps-first design built for modern DevOps workflows with standard tool integration.'
       ],
-      links: {},
+      links: {
+        github: 'https://github.com/gridplatform',
+        demo: 'https://gridplatform.org'
+      },
+      status: 'Active Development',
+      category: 'Platform Engineering'
+    },
+    {
+      title: 'Infrastructure Monitoring & Observability',
+      description: 'Architected unified observability stack with Prometheus and Grafana, achieving 76% MTTR reduction (30min → 7min) across 125+ Kubernetes deployments and 300+ compute instances.',
+      technologies: ['Prometheus', 'Grafana', 'GCP Stackdriver', 'Jenkins', 'Slack', 'Python'],
+      features: [
+        'Unified observability stack with real-time monitoring and automated escalation across multi-environment setups (DEV, SIT, UAT, PROD).',
+        '76% MTTR reduction (30 minutes → 7 minutes) through automated alerting and incident response workflows.',
+        'Comprehensive monitoring coverage for 125+ Kubernetes deployments and 300+ compute instances with proactive dashboards.',
+        'CI/CD integration with Jenkins and Slack for real-time job failure alerts and automated escalation policies.'
+      ],
+      links: {
+        demo: 'https://github.com/thisiskushal31/thisiskushal31/tree/main/projects/1_PurplleInfra_Monitoring_Improvement'
+      },
+      status: 'Production',
+      category: 'Platform Engineering'
+    },
+    {
+      title: 'E-Commerce Platform Infrastructure (Purplle.com)',
+      description: 'Managed and maintained main e-commerce platform infrastructure serving 7M total users with 4x traffic spike handling, supporting ₹700+ Crore annual revenue with 99%+ uptime.',
+      technologies: ['Kubernetes', 'GKE', 'MySQL', 'Elasticsearch', 'MongoDB', 'Redis', 'Terraform', 'gh-ost'],
+      features: [
+        'Managed 125+ Kubernetes deployments on GKE across multi-zone, multi-cloud architecture (GCP + AWS).',
+        'Zero-downtime MySQL migrations on 4TB databases using gh-ost, ensuring zero-lag schema alterations.',
+        'Multi-zone high-availability deployment with step scaling, handling 4x traffic spikes during major sales events.',
+        'Reduced site downtime by 33% through infrastructure optimization and proactive monitoring under high load.',
+        'Container-native load balancing with kubedns service discovery for microservices architecture.'
+      ],
+      links: {
+        demo: 'https://github.com/thisiskushal31/thisiskushal31/tree/main/projects/2_Purplle.com_Management'
+      },
+      status: 'Production',
+      category: 'Platform Engineering'
+    },
+    {
+      title: 'POS Platform Deployment (Nexus)',
+      description: 'Deployed high-availability POS platform for 100+ retail stores with 99%+ uptime, supporting 500+ daily employees and 40+ Crores revenue.',
+      technologies: ['Kubernetes', 'GKE', 'Kafka', 'Redis', 'Terraform', 'Jenkins', 'GCP'],
+      features: [
+        'High-availability deployment across DEV, SIT, UAT, PROD environments with auto-scaling (1-6 pods).',
+        'Kafka + Redis architecture for real-time data processing and caching, ensuring 99%+ uptime.',
+        'Multi-environment support with consistent deployments and automated provisioning via Terraform.',
+        'Successfully handling 100+ retail stores with 500+ daily employees, supporting 40+ Crores revenue.'
+      ],
+      links: {
+        demo: 'https://github.com/thisiskushal31/thisiskushal31/tree/main/projects/3_Nexus.purplle.com_Deployment'
+      },
+      status: 'Production',
+      category: 'Platform Engineering'
+    },
+    {
+      title: 'Security Hardening & Zero-Trust Architecture',
+      description: 'Comprehensive security improvements implementing zero-trust architecture, Kubernetes RBAC, automated IAM minimization, and defense-in-depth across 125+ Kubernetes deployments.',
+      technologies: ['Kubernetes', 'RBAC', 'GCP', 'Python', 'Terraform', 'Trivy', 'Secrets Manager', 'SSO'],
+      features: [
+        'Zero-trust architecture with defense-in-depth, implementing multi-layer security controls across all infrastructure.',
+        'Automated IAM role minimization using Python scripts, enforcing least privilege access and reducing attack surface.',
+        'Kubernetes RBAC implementation with Secure Boot, Trivy container scanning, and Secrets Manager deployment.',
+        'SSO implementation and IP whitelisting for centralized access control and traffic segmentation.',
+        'Compliance alignment with DPDP, ISO 27001/27018/27017/27002, NIST, CIS, and OWASP guidelines.'
+      ],
+      links: {
+        demo: 'https://github.com/thisiskushal31/thisiskushal31/tree/main/projects/4_Purplle.com_SecurityImprovement'
+      },
+      status: 'Production',
+      category: 'DevSecOps'
+    },
+    {
+      title: 'Infrastructure Automation & IAC Deployment',
+      description: 'Infrastructure as Code initiative using Terraform and Ansible, achieving 40%+ faster deployments and automating 40%+ of provisioning tasks across multi-environment setups.',
+      technologies: ['Terraform', 'Ansible', 'Jenkins', 'GitLab CI', 'GitOps', 'Python', 'Bash'],
+      features: [
+        'Reusable, parameterized Terraform modules for GKE clusters, Cloud SQL, VPCs, Load Balancers, and Kubernetes deployments.',
+        '40%+ faster deployments through IAC automation and CI/CD modernization with GitOps workflows.',
+        'Multi-environment consistency (DEV, SIT, UAT, PROD) with automated provisioning and configuration management via Ansible.',
+        'CI/CD modernization: Migrated Jenkins from freestyle bash jobs to scripted pipeline jobs with Slack integration.',
+        'Automated backup systems for MySQL, MongoDB, Elasticsearch using Python/Bash with cron scheduling.'
+      ],
+      links: {
+        demo: 'https://github.com/thisiskushal31/thisiskushal31/tree/main/projects/5_Purplle.com_IAC_Deployment'
+      },
       status: 'Production',
       category: 'DevOps'
     },
     {
-      title: 'Nexus - Internal Inhouse POS Application',
-      description: 'Deployed and optimized resilient infrastructure for Nexus, an internal POS system, ensuring high availability and robust monitoring for retail operations at purplle.com.',
-      technologies: ['GCP', 'Grafana', 'Prometheus', 'Python', 'WAF', 'Terraform'],
+      title: 'AdTech Platform (PurplleAds)',
+      description: 'Deployed in-house AdTech platform supporting ₹400+ Crore brand advertising revenue with 93% cost reduction (₹80 Lakh → ₹5.7 Lakh), handling 4x traffic spikes during major sales.',
+      technologies: ['Kubernetes', 'GKE', 'Terraform', 'GitLab CI', 'Keycloak', 'GCP', 'AWS', 'Route53'],
       features: [
-        'Designed and deployed high-availability infrastructure using Terraform and GCP services, ensuring uninterrupted retail operations.',
-        'Integrated monitoring and alerting with Grafana and Prometheus, enabling real-time system performance visibility.',
-        'Implemented WAF to protect the application from common web threats, enhancing security posture.',
-        'Successfully transitioned infrastructure management to DevOps and development teams post-deployment for long-term sustainability.'
+        '100+ Kubernetes deployments on GKE with multi-cloud architecture (AWS + GCP) for high availability.',
+        '93% cost optimization (₹80 Lakh → ₹5.7 Lakh) through infrastructure rightsizing and automation.',
+        'Keycloak authentication integration for secure access management across the platform.',
+        '4x traffic spike handling during major sales events, supporting 7M total users with 150K DAU (600K during major sales).',
+        'Multi-cloud deployment with Route53, GKE, and container-native load balancing for resilience.'
       ],
-      links: {},
+      links: {
+        demo: 'https://github.com/thisiskushal31/thisiskushal31/tree/main/projects/6_Adtech.purplle.com_Deployment'
+      },
       status: 'Production',
       category: 'Platform Engineering'
-    },
-    {
-      title: 'Monitoring & Alerting Automation',
-      description: 'Automated infrastructure monitoring and alerting to improve incident response, reduce downtime, and proactively detect issues at purplle.com.',
-      technologies: ['Grafana', 'Prometheus', 'Python', 'GCP'],
-      features: [
-        'Migrated 100% of legacy alerting systems to Grafana Alerts, enabling unified monitoring across all infrastructure components.',
-        'Implemented on-call alerting workflows that reduced mean time to recovery (MTTR) from 30 minutes to 7 minutes.',
-        'Built custom Grafana dashboards for proactive monitoring of system health, capacity, and performance metrics.',
-        'Established automated alert routing and escalation policies, improving response times and incident handling.'
-      ],
-      links: {},
-      status: 'Production',
-      category: 'Platform Engineering'
-    },
-    {
-      title: 'Cloud Infrastructure Security Enhancements',
-      description: 'Strengthened cloud infrastructure security by automating key security controls, minimizing risks, and reducing attack surface at purplle.com.',
-      technologies: ['GCP', 'Python', 'Terraform', 'Kubernetes', 'Secrets Manager'],
-      features: [
-        'Automated IAM role minimization and unused service account cleanup, reducing unauthorized access risks.',
-        'Implemented Secure Boot and automated firewall rule cleanups to harden infrastructure security.',
-        'Deployed Secrets Manager for secure handling of sensitive data across Kubernetes (GKE), VMs, and services.',
-        'Enabled automated network logging and public IP cleanup, minimizing exposure to external threats.',
-        'Adopted zero-trust security principles across cloud resources to enforce least privilege access and compliance.'
-      ],
-      links: {},
-      status: 'Production',
-      category: 'DevSecOps'
     }
   ],
 
@@ -165,6 +227,7 @@ export const portfolioConfig = {
     { name: "Hashnode", url: "https://thisiskushal.hashnode.dev/", icon: "LinkIcon", description: "View my articles on Hashnode" },
     { name: "Medium", url: "https://thisiskushalgupta.medium.com/", icon: "LinkIcon", description: "Read my articles on Medium" },
     { name: "GitHub", url: "https://github.com/thisiskushal31", icon: "CodeIcon", description: "Code repositories" },
+    { name: "GitHub Projects", url: "https://github.com/thisiskushal31/thisiskushal31/tree/main/projects", icon: "CodeIcon", description: "Detailed project documentation" },
     { name: "X.com", url: "https://x.com/thisis_kushal", icon: "LinkIcon", description: "Let's connect on X" },
     { name: "Codepen", url: "https://codepen.io/thisiskushal31/", icon: "LinkIcon", description: "Browse my projects on codepen" },
     { name: "Leetcode", url: "https://leetcode.com/u/Quick067/", icon: "LinkIcon", description: "Leetcode profile" },

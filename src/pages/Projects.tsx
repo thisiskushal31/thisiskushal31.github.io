@@ -132,14 +132,22 @@ const Projects = () => {
             Explore More Projects
           </LinkableHeading>
           <p className="text-muted-foreground mb-6">
-            Explore more of my work in software, automation, and cloud on GitHub.
+            Explore detailed technical documentation, architecture diagrams, and implementation details for all projects.
           </p>
-          <Button size="lg" asChild>
-            <a href="https://github.com/thisiskushal31" target="_blank" rel="noopener noreferrer">
-              <Github className="h-5 w-5 mr-2" />
-              View All Projects on GitHub
-            </a>
-          </Button>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button size="lg" asChild>
+              <a href="https://github.com/thisiskushal31/thisiskushal31/tree/main/projects" target="_blank" rel="noopener noreferrer">
+                <ExternalLink className="h-5 w-5 mr-2" />
+                View Detailed Project Documentation
+              </a>
+            </Button>
+            <Button size="lg" variant="outline" asChild>
+              <a href="https://github.com/thisiskushal31" target="_blank" rel="noopener noreferrer">
+                <Github className="h-5 w-5 mr-2" />
+                View All Projects on GitHub
+              </a>
+            </Button>
+          </div>
         </div>
       </div>
     </div>
