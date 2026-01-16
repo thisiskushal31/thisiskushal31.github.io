@@ -1,8 +1,8 @@
 {
-  "name": "Kushal Gupta | Cloud-Native, DevOps, Automation & Modern Deployment",
-  "short_name": "Kushal Gupta",
-  "description": "Portfolio of Kushal Gupta, Cloud-Native & DevOps Engineer specializing in Kubernetes, AWS, Terraform, CI/CD, GitOps, DevSecOps, Platform Engineering, and AI-driven automation.",
-  "start_url": ".",
+  "name": "Kushal Gupta | Platform Engineer & DevOps Specialist | Tech Resources Hub",
+  "short_name": "Kushal Tech Hub",
+  "description": "Platform Engineer & DevOps Specialist building scalable cloud infrastructure. Access 100+ curated links to professional profiles, projects, courses, tools, and resources for DevOps, Platform Engineering, and Software Development.",
+  "start_url": "/",
   "display": "standalone",
   "background_color": "#0a192f",
   "theme_color": "#0a192f",
@@ -19,5 +19,7 @@
       "purpose": "any maskable"
     }
   ],
-  "lang": "en"
+  "lang": "en",
+  "categories": ["productivity", "utilities", "developer tools"],
+  "keywords": ["platform engineering", "devops", "cloud infrastructure", "kubernetes", "docker", "aws", "ci/cd", "gitops", "terraform", "microservices", "site reliability engineering", "sre", "automation", "infrastructure as code"]
 }

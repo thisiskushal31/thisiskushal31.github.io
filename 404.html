@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting...</title>
+    <script>
+      // GitHub Pages 404.html - handles redirects for SPA
+      (function() {
+        var path = window.location.pathname;
+        var hash = window.location.hash;
+        
+        // Redirect /link or /link/ to root
+        if (path === '/link' || path === '/link/') {
+          window.location.replace('/#/');
+          return;
+        }
+        
+        // For any other 404, redirect to root with hash
+        if (!hash) {
+          window.location.replace('/#/');
+        } else {
+          // If there's a hash, try to load the app
+          window.location.replace('/#/');
+        }
+      })();
+    </script>
+</head>
+<body>
+    <p>Redirecting...</p>
+</body>
+</html>
