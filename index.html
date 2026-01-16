@@ -55,7 +55,7 @@
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-    <script type="module" crossorigin src="/assets/index-kygOGG70.js"></script>
+    <script type="module" crossorigin src="/assets/index-CCOwAb30.js"></script>
     <link rel="stylesheet" crossorigin href="/assets/index-CJhprjPk.css">
   </head>
 
@@ -65,10 +65,18 @@
     <!-- Hash redirect for GitHub Pages -->
     <script>
       // Root deployment: if at root with no hash, add hash
+      // Also handle /link path redirect
       (function() {
         var path = window.location.pathname;
         var hash = window.location.hash;
         
+        // Redirect /link to /#/
+        if (path === '/link' || path === '/link/') {
+          window.location.replace('/#/');
+          return;
+        }
+        
+        // Root deployment: if at root with no hash, add hash
         if (path === '/' && !hash) {
           window.location.replace('/#/');
         }
