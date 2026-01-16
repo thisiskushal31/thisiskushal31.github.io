@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams, useNavigate, useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
 import { profile } from "@/config/profile";
 import { AnimatedBackground } from "@/components/link/AnimatedBackground";
@@ -14,6 +14,15 @@ import { JumpToSection } from "@/components/link/JumpToSection";
 export default function LinkBio() {
   const { sectionId, linkId } = useParams();
   const navigate = useNavigate();
+  const location = useLocation();
+
+  // Handle /link route redirect to home
+  useEffect(() => {
+    if (location.pathname === "/link") {
+      navigate("/", { replace: true });
+      return;
+    }
+  }, [location.pathname, navigate]);
 
   // Handle deep linking to sections/links
   useEffect(() => {

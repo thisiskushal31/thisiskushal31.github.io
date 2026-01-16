@@ -18,6 +18,7 @@ const App = () => (
         <HashRouter>
           <Routes>
             <Route path="/" element={<LinkBio />} />
+            <Route path="/link" element={<LinkBio />} />
             <Route path="/section/:sectionId" element={<LinkBio />} />
             <Route path="/section/:sectionId/link/:linkId" element={<LinkBio />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
