@@ -129,9 +129,9 @@ export const profile: Profile = {
       title: "You Can Find Me On",
       icon: "Link",
       links: [
-        { id: "upwork", title: "Upwork", url: "https://upwork.com/", icon: "SiUpwork" },
-        { id: "fiverr", title: "Fiverr", url: "https://fiverr.com/", icon: "TbBrandFiverr" },
-        { id: "freelancer", title: "Freelancer", url: "https://freelancer.com/", icon: "SiFreelancer" },
+        // { id: "upwork", title: "Upwork", url: "https://upwork.com/", icon: "SiUpwork" },
+        // { id: "fiverr", title: "Fiverr", url: "https://fiverr.com/", icon: "TbBrandFiverr" },
+        // { id: "freelancer", title: "Freelancer", url: "https://freelancer.com/", icon: "SiFreelancer" },
         { id: "hashnode", title: "Hashnode", url: "https://hashnode.com/@thisiskushal31", icon: "SiHashnode" },
         { id: "medium", title: "Medium", url: "https://medium.com/@thisiskushal31", icon: "SiMedium" },
         { id: "codepen", title: "CodePen", url: "https://codepen.io/thisiskushal31", icon: "SiCodepen" },
