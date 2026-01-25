@@ -61,10 +61,10 @@ export interface Profile {
 export const profile: Profile = {
   name: "Kushal Gupta",
   title: "DevOps Engineer",
-  bio: "🚀 Experienced DevOps & Platform Engineer | Skilled in Containers, CI/CD, IaC | Exploring AI, Cloud-Native & Secure Systems",
-  avatar: "https://kushal.cv/profile.jpeg",
+  bio: "Experienced DevOps & Platform Engineer building production-grade systems at scale. Managed infrastructure serving 7M+ users, achieved 99%+ uptime, 40%+ faster deployments, 76% MTTR reduction. Expertise in Kubernetes, cloud infrastructure, CI/CD, Infrastructure as Code (IaC), operating systems, networking, security-first architecture, and AI-driven automation. End-to-end ownership from design to reliability.",
+  avatar: "https://kushal.cv/profile1.jpg",
   location: "Kolkata, India",
-  socialLinks: [
+  socialLinks: [ 
     { id: "website", name: "Website", url: "https://kushal.cv/", icon: "Globe" },
     { id: "email", name: "E-Mail", url: "mailto:guptakushal070@gmail.com", icon: "Mail" },
     { id: "linkedin", name: "LinkedIn", url: "https://linkedin.com/in/thisiskushalgupta", icon: "Linkedin" },
