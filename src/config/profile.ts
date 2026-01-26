@@ -104,7 +104,7 @@ export const profile: Profile = {
   //       role: "Product Manager",
   //       rating: 5,
       //       platform: "Fiverr",
-      //       platformUrl: "https://www.fiverr.com/your-profile",
+      //       platformUrl: "https://www.fiverr.com/s/38QAjWV", 
       //       // TODO: Update URL when provided
   //     },
   //     {
@@ -120,7 +120,7 @@ export const profile: Profile = {
   //   platformLinks: [
     //     { id: "topmate", name: "Topmate", url: "https://topmate.io/kushalgupta", icon: "Users" },
     //     { id: "upwork", name: "Upwork", url: "https://www.upwork.com/freelancers/~01bfdeecbefb8b7e7b", icon: "SiUpwork" },
-    //     { id: "fiverr", name: "Fiverr", url: "https://www.fiverr.com/your-profile", icon: "TbBrandFiverr" },
+    //     { id: "fiverr", name: "Fiverr", url: "https://www.fiverr.com/s/38QAjWV", icon: "TbBrandFiverr" },
     //     { id: "freelancer", name: "Freelancer", url: "https://www.freelancer.com/u/kushalg34", icon: "SiFreelancer" },
   //   ],
   // },
@@ -131,7 +131,7 @@ export const profile: Profile = {
       icon: "Link",
       links: [
         // { id: "upwork", title: "Upwork", url: "https://www.upwork.com/freelancers/~01bfdeecbefb8b7e7b", icon: "SiUpwork" },
-        // { id: "fiverr", title: "Fiverr", url: "https://www.fiverr.com/your-profile", icon: "TbBrandFiverr" },
+        // { id: "fiverr", title: "Fiverr", url: "https://www.fiverr.com/s/38QAjWV", icon: "TbBrandFiverr" },
         // { id: "freelancer", title: "Freelancer", url: "https://www.freelancer.com/u/kushalg34", icon: "SiFreelancer" },
         { id: "hashnode", title: "Hashnode", url: "https://hashnode.com/@thisiskushal31", icon: "SiHashnode" },
         { id: "medium", title: "Medium", url: "https://medium.com/@thisiskushal31", icon: "SiMedium" },
