@@ -41,9 +41,45 @@ body {
   height: 96px;
   border-radius: 50%;
   object-fit: cover;
-  margin: 0 auto 1.25rem;
+  margin: 0 auto 0.75rem;
   border: 3px solid var(--primary);
   box-shadow: 0 0 0 1px var(--border), 0 0 24px var(--primary-glow);
+}
+
+.byline {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--text);
+  margin: 0 0 0.25rem;
+}
+
+.tagline {
+  font-size: 0.8125rem;
+  color: var(--muted);
+  margin: 0 0 0.25rem;
+}
+
+.subtitle {
+  font-size: 0.75rem;
+  color: var(--muted);
+  margin: 0 0 0.5rem;
+  line-height: 1.35;
+  max-width: 20em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.location {
+  font-size: 0.75rem;
+  color: var(--muted);
+  margin: 0 0 1rem;
+}
+
+.moved-note {
+  font-size: 0.875rem;
+  color: var(--muted);
+  margin: 0 0 0.5rem;
+  line-height: 1.4;
 }
 
 h1 {
